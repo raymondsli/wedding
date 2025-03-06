@@ -4,9 +4,9 @@ function NavBar(props) {
   const { navItems } = props;
   return (
     <div className="nav-container">
-      <button className="nav-item">Test</button>
-      <button className="nav-item">Second</button>
-      <button className="nav-item">Third</button>
+      <button className="nav-item">Schedule</button>
+      <button className="nav-item">Dinner</button>
+      <button className="nav-item">FAQ</button>
     </div>
   );
 }
