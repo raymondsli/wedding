@@ -1,7 +1,7 @@
 {
-  "name": "wedding-website",
+  "name": "wedding",
   "version": "0.1.0",
-  "homepage": "https://raymondsli.github.io/wedding-website",
+  "homepage": "https://raymondsli.github.io/wedding",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
