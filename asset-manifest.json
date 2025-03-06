@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wedding-website/static/css/main.c60a7d85.css",
-    "main.js": "/wedding-website/static/js/main.c781820b.js",
-    "static/media/background-4.jpg": "/wedding-website/static/media/background-4.deb9b2d8691cb1059cae.jpg",
-    "static/media/Caveat.ttf": "/wedding-website/static/media/Caveat.31f0a02d84d42627c894.ttf",
-    "static/media/PTSerif-Regular.ttf": "/wedding-website/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
-    "static/media/dinner-menu.jpg": "/wedding-website/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
-    "static/media/Charm-Regular.ttf": "/wedding-website/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
-    "static/media/AmsterdamOne.ttf": "/wedding-website/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
-    "index.html": "/wedding-website/index.html",
-    "main.c60a7d85.css.map": "/wedding-website/static/css/main.c60a7d85.css.map",
-    "main.c781820b.js.map": "/wedding-website/static/js/main.c781820b.js.map"
+    "main.css": "/wedding/static/css/main.a13e6616.css",
+    "main.js": "/wedding/static/js/main.c781820b.js",
+    "static/media/background-4.jpg": "/wedding/static/media/background-4.deb9b2d8691cb1059cae.jpg",
+    "static/media/Caveat.ttf": "/wedding/static/media/Caveat.31f0a02d84d42627c894.ttf",
+    "static/media/PTSerif-Regular.ttf": "/wedding/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
+    "static/media/dinner-menu.jpg": "/wedding/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
+    "static/media/Charm-Regular.ttf": "/wedding/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
+    "static/media/AmsterdamOne.ttf": "/wedding/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
+    "index.html": "/wedding/index.html",
+    "main.a13e6616.css.map": "/wedding/static/css/main.a13e6616.css.map",
+    "main.c781820b.js.map": "/wedding/static/js/main.c781820b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c60a7d85.css",
+    "static/css/main.a13e6616.css",
     "static/js/main.c781820b.js"
   ]
 }
