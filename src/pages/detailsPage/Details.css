@@ -9,3 +9,9 @@
   font-size: 65px;
   font-family: "Amsterdam", Arial, serif;
 }
+
+.countdown-clock {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
