@@ -9,8 +9,9 @@ function Schedule(props) {
           5:15: Arrive at Pines Park (Address: 34941 Camino Capistrano,
           Capistrano Beach, CA 92624){" "}
         </div>
+        <div className="schedule-content-text">5:30-5:45: Wedding Ceremony</div>
         <div className="schedule-content-text">
-          5:30-5:45: Wedding Ceremony 5:45-6:30: Photos with Guests
+          5:45-6:30: Photos with Guests
         </div>
         <div className="schedule-content-text">
           6:30-7:15: Arrive at Whitestone Restaurant & Bar (Address: 34212
