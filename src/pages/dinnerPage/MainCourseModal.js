@@ -61,7 +61,7 @@ function MainCourseButtonAndModal(props) {
         () => {
           setShowSuccessModal(true);
         },
-        (error) => {
+        () => {
           setShowFailModal(true);
         }
       );
@@ -79,7 +79,9 @@ function MainCourseButtonAndModal(props) {
   } else if (showFailModal) {
     return (
       <InfoModal onClose={handleClose}>
-        <div>Something went wrong with the submission.</div>
+        <div style={{ marginBottom: "5px" }}>
+          Something went wrong with the submission.
+        </div>
         <div>
           Please try again later or directly message either Yi-Nung or Raymond.
         </div>
