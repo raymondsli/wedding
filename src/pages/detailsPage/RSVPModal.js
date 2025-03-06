@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormModal from "../../components/FormModal";
 import FormButton from "../../components/FormButton";
 import Select from "react-select";
+import emailjs from "@emailjs/browser";
 
 const attendanceOptions = [
   { value: "Yes", label: "Yes" },
@@ -30,6 +31,26 @@ function RSVPModal(props) {
   };
 
   const submitRSVPForm = () => {
+    emailjs
+      .send(
+        "service_tubf9o9",
+        "template_q8zrmkf",
+        {
+          name,
+          message: `Attending Ceremony: ${attendingCermony.label}. Attending Dinner: ${attendingDinner.label}.`,
+        },
+        {
+          publicKey: "4-TX7d682kI7opsP_",
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
     closeModal();
   };
 

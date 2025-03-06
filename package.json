@@ -4,6 +4,7 @@
   "homepage": "https://raymondsli.github.io/wedding-website",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@leenguyen/react-flip-clock-countdown": "^1.6.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
