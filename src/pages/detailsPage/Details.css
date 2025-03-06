@@ -1,10 +1,11 @@
 .background-image {
   background-image: url("~/src/images/background-4.jpg");
   background-size: cover;
-  height: 725px;
+  height: 900px;
 }
 
 .name-header {
+  padding-top: 100px;
   text-align: center;
   font-size: 65px;
   font-family: "Amsterdam", Arial, serif;
