@@ -1,12 +1,23 @@
 import "./NavBar.css";
 
 function NavBar(props) {
-  const { navItems } = props;
+  const { scheduleRef, dinnerRef, faqRef } = props;
+
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="nav-container">
-      <button className="nav-item">Schedule</button>
-      <button className="nav-item">Dinner</button>
-      <button className="nav-item">FAQ</button>
+      <button className="nav-item" onClick={() => scrollToRef(scheduleRef)}>
+        Schedule
+      </button>
+      <button className="nav-item" onClick={() => scrollToRef(dinnerRef)}>
+        Dinner
+      </button>
+      <button className="nav-item" onClick={() => scrollToRef(faqRef)}>
+        FAQ
+      </button>
     </div>
   );
 }

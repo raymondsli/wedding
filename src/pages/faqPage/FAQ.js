@@ -19,7 +19,7 @@ const questionAndAnswers = {
   "Is there a gift registry?": "No gifts and no gift registry.",
 };
 
-function FAQ() {
+function FAQ(props) {
   const renderQAndAComponent = () => {
     const rows = [];
     for (const [question, answer] of Object.entries(questionAndAnswers)) {
@@ -28,7 +28,7 @@ function FAQ() {
     return rows;
   };
   return (
-    <div>
+    <div ref={props.ref}>
       <h1 className="subsection-header">FAQ</h1>
       <div className="faq-container">{renderQAndAComponent()}</div>
     </div>

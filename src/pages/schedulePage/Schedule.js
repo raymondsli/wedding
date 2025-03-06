@@ -1,8 +1,8 @@
 import "./Schedule.css";
 
-function Schedule() {
+function Schedule(props) {
   return (
-    <div>
+    <div ref={props.ref}>
       <h1 className="subsection-header">Schedule</h1>
       <div className="schedule-content-container">
         <div className="schedule-content-text">
