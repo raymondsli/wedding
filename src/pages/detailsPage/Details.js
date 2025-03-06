@@ -11,6 +11,9 @@ function Details() {
       <div className="countdown-clock">
         <FlipClockCountdown to={"2025-09-06T17:00:00"} />
       </div>
+      <div className="rsvp-button-container">
+        <button>RSVP</button>
+      </div>
     </div>
   );
 }

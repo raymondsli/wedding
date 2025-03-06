@@ -1,7 +1,7 @@
 .sky-background-image {
-  background-image: url("~/src/images/white-cloud-blue-sky-sea.jpg");
+  background-image: url("~/src/images/background-4.jpg");
   background-size: cover;
-  height: 1000px;
+  height: 700px;
 }
 
 .name-header {
@@ -11,6 +11,12 @@
 }
 
 .countdown-clock {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.rsvp-button-container {
   margin-top: 50px;
   display: flex;
   justify-content: center;
