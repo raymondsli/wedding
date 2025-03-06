@@ -18,3 +18,8 @@
   font-family: "Charm";
   src: url("~/src/fonts/Charm-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Caveat";
+  src: url("~/src/fonts/Caveat.ttf");
+}
