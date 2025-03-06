@@ -1,11 +1,10 @@
-import './App.css';
+import "./App.css";
+import Details from "./pages/detailsPage/Details.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello World! Yi-Nung + Raymond
-      </header>
+    <div>
+      <Details />
     </div>
   );
 }

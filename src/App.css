@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Amsterdam";
+  src: url("~/src/fonts/AmsterdamOne.ttf");
+}
+
+@font-face {
+  font-family: "PTSerif";
+  src: url("~/src/fonts/PTSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Charm";
+  src: url("~/src/fonts/Charm-Regular.ttf");
+}
