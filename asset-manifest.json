@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wedding-website/static/css/main.8e435a6b.css",
-    "main.js": "/wedding-website/static/js/main.7fb79d7b.js",
+    "main.css": "/wedding-website/static/css/main.c60a7d85.css",
+    "main.js": "/wedding-website/static/js/main.c781820b.js",
     "static/media/background-4.jpg": "/wedding-website/static/media/background-4.deb9b2d8691cb1059cae.jpg",
     "static/media/Caveat.ttf": "/wedding-website/static/media/Caveat.31f0a02d84d42627c894.ttf",
     "static/media/PTSerif-Regular.ttf": "/wedding-website/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
@@ -9,11 +9,11 @@
     "static/media/Charm-Regular.ttf": "/wedding-website/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
     "static/media/AmsterdamOne.ttf": "/wedding-website/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
     "index.html": "/wedding-website/index.html",
-    "main.8e435a6b.css.map": "/wedding-website/static/css/main.8e435a6b.css.map",
-    "main.7fb79d7b.js.map": "/wedding-website/static/js/main.7fb79d7b.js.map"
+    "main.c60a7d85.css.map": "/wedding-website/static/css/main.c60a7d85.css.map",
+    "main.c781820b.js.map": "/wedding-website/static/js/main.c781820b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e435a6b.css",
-    "static/js/main.7fb79d7b.js"
+    "static/css/main.c60a7d85.css",
+    "static/js/main.c781820b.js"
   ]
 }
