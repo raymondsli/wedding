@@ -32,6 +32,8 @@ function InfoModal(props) {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          fontFamily: "Caveat",
+          fontSize: "20px",
         }}
       >
         {children}

@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar.js";
-import Seperator from "./components/Seperator.js";
+import Separator from "./components/Separator.js";
 import Details from "./pages/detailsPage/Details.js";
 import Schedule from "./pages/schedulePage/Schedule.js";
 import Dinner from "./pages/dinnerPage/Dinner.js";
@@ -17,9 +17,9 @@ function App() {
       <NavBar scheduleRef={scheduleRef} dinnerRef={dinnerRef} faqRef={faqRef} />
       <Details />
       <Schedule ref={scheduleRef} />
-      <Seperator />
+      <Separator />
       <Dinner ref={dinnerRef} />
-      <Seperator />
+      <Separator />
       <FAQ ref={faqRef} />
     </div>
   );
