@@ -1,0 +1,14 @@
+.faq-row-container {
+  margin-bottom: 20px;
+}
+
+.faq-row-question {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.faq-row-answer {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 24px;
+}

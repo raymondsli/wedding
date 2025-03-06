@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .form-button {
   margin: 10px 0 10px 10px;
   border-radius: 4px;
