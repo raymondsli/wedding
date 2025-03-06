@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormModal from "../../components/FormModal";
+import InfoModal from "../../components/InfoModal";
 import FormButton from "../../components/FormButton";
 import Select from "react-select";
 import emailjs from "@emailjs/browser";
@@ -16,8 +17,20 @@ const mainCourseOptions = [
 
 function MainCourseButtonAndModal(props) {
   const { closeModal } = props;
+  const [isConfirmationClicked, setIsConfirmationClicked] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showFailModal, setShowFailModal] = useState(false);
   const [name, setName] = useState("");
   const [mainCourseOption, setMainCourseOption] = useState("");
+
+  const handleClose = () => {
+    setIsConfirmationClicked(false);
+    setShowSuccessModal(false);
+    setShowFailModal(false);
+    setName("");
+    setMainCourseOption("");
+    closeModal();
+  };
 
   const toolTipMessage = () => {
     if (name == "" && mainCourseOption == "") {
@@ -31,6 +44,7 @@ function MainCourseButtonAndModal(props) {
   };
 
   const submitMainCourseForm = () => {
+    setIsConfirmationClicked(true);
     emailjs
       .send(
         "service_tubf9o9",
@@ -45,17 +59,36 @@ function MainCourseButtonAndModal(props) {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          setShowSuccessModal(true);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          setShowFailModal(true);
         }
       );
-    closeModal();
   };
 
+  if (showSuccessModal) {
+    return (
+      <InfoModal onClose={handleClose}>
+        <div style={{ marginBottom: "5px" }}>
+          Main course selection received!
+        </div>
+        <div>Thank you!</div>
+      </InfoModal>
+    );
+  } else if (showFailModal) {
+    return (
+      <InfoModal onClose={handleClose}>
+        <div>Something went wrong with the submission.</div>
+        <div>
+          Please try again later or directly message either Yi-Nung or Raymond.
+        </div>
+      </InfoModal>
+    );
+  }
+
   return (
-    <FormModal onClose={closeModal}>
+    <FormModal onClose={handleClose}>
       <h2 className="modal-title-text">Choose Main Course</h2>
       <form>
         <div className="form-field">
@@ -101,12 +134,15 @@ function MainCourseButtonAndModal(props) {
         </div>
       </form>
       <div className="form-buttons-container">
-        <FormButton text="Close" onClick={closeModal} isDisabled={false} />
+        <FormButton text="Close" onClick={handleClose} isDisabled={false} />
         <FormButton
           text="Submit"
           onClick={submitMainCourseForm}
           toolTip={toolTipMessage()}
-          isDisabled={name == "" || mainCourseOption == ""}
+          isDisabled={
+            name == "" || mainCourseOption == "" || isConfirmationClicked
+          }
+          isActive={isConfirmationClicked}
         />
       </div>
     </FormModal>

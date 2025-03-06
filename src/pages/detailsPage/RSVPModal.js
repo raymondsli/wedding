@@ -1,4 +1,5 @@
 import { useState } from "react";
+import InfoModal from "../../components/InfoModal";
 import FormModal from "../../components/FormModal";
 import FormButton from "../../components/FormButton";
 import Select from "react-select";
@@ -12,9 +13,22 @@ const attendanceOptions = [
 
 function RSVPModal(props) {
   const { closeModal } = props;
+  const [isConfirmationClicked, setIsConfirmationClicked] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showFailModal, setShowFailModal] = useState(false);
   const [name, setName] = useState("");
   const [attendingCermony, setAttendingCeremony] = useState("");
   const [attendingDinner, setAttendingDinner] = useState("");
+
+  const handleClose = () => {
+    setIsConfirmationClicked(false);
+    setShowSuccessModal(false);
+    setShowFailModal(false);
+    setName("");
+    setAttendingCeremony("");
+    setAttendingDinner("");
+    closeModal();
+  };
 
   const toolTipMessage = () => {
     if (name == "") {
@@ -31,6 +45,7 @@ function RSVPModal(props) {
   };
 
   const submitRSVPForm = () => {
+    setIsConfirmationClicked(true);
     emailjs
       .send(
         "service_tubf9o9",
@@ -45,17 +60,81 @@ function RSVPModal(props) {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          setShowSuccessModal(true);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          setShowFailModal(true);
         }
       );
-    closeModal();
   };
 
+  const confirmationMessage = () => {
+    if (attendingCermony.label == "Yes" && attendingDinner.label == "Yes") {
+      return (
+        <>
+          <div style={{ marginBottom: "5px" }}>RSVP received!</div>
+          <div style={{ marginBottom: "5px" }}>
+            We'll see you at the ceremony and dinner!
+          </div>
+          <div>Thank you!</div>
+        </>
+      );
+    } else if (attendingCermony.label == "Yes") {
+      return (
+        <>
+          <div style={{ marginBottom: "5px" }}>RSVP received!</div>
+          <div style={{ marginBottom: "5px" }}>
+            We'll see you at the ceremony!
+          </div>
+          <div>Thank you!</div>
+        </>
+      );
+    } else if (attendingDinner.label == "Yes") {
+      return (
+        <>
+          <div style={{ marginBottom: "5px" }}>RSVP received!</div>
+          <div style={{ marginBottom: "5px" }}>
+            We'll see you at the dinner!
+          </div>
+          <div>Thank you!</div>
+        </>
+      );
+    } else if (
+      attendingCermony.label == "No" &&
+      attendingDinner.label == "No"
+    ) {
+      return (
+        <>
+          <div style={{ marginBottom: "5px" }}>No worries!</div>
+          <div style={{ marginBottom: "5px" }}>
+            Guess we'll have to see you some other time then!
+          </div>
+        </>
+      );
+    }
+    return (
+      <>
+        <div style={{ marginBottom: "5px" }}>RSVP Received!</div>
+        <div style={{ marginBottom: "5px" }}>We hope to see you there!</div>
+      </>
+    );
+  };
+
+  if (showSuccessModal) {
+    return <InfoModal onClose={handleClose}>{confirmationMessage()}</InfoModal>;
+  } else if (showFailModal) {
+    return (
+      <InfoModal onClose={handleClose}>
+        <div>Something went wrong with the submission.</div>
+        <div>
+          Please try again later or directly message either Yi-Nung or Raymond.
+        </div>
+      </InfoModal>
+    );
+  }
+
   return (
-    <FormModal onClose={closeModal}>
+    <FormModal onClose={handleClose}>
       <h2 className="modal-title-text">RSVP</h2>
       <form>
         <div className="form-field">
@@ -127,14 +206,18 @@ function RSVPModal(props) {
         </div>
       </form>
       <div className="form-buttons-container">
-        <FormButton text="Close" onClick={closeModal} isDisabled={false} />
+        <FormButton text="Close" onClick={handleClose} isDisabled={false} />
         <FormButton
           text="Submit"
           onClick={submitRSVPForm}
           toolTip={toolTipMessage()}
           isDisabled={
-            name == "" || attendingCermony == "" || attendingDinner == ""
+            name == "" ||
+            attendingCermony == "" ||
+            attendingDinner == "" ||
+            isConfirmationClicked
           }
+          isActive={isConfirmationClicked}
         />
       </div>
     </FormModal>
