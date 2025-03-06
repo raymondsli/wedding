@@ -5,7 +5,7 @@ import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 
 function Details() {
   return (
-    <div className="sky-background-image">
+    <div className="background-image">
       <h1 className="name-header">Yi-Nung & Raymond</h1>
       <DetailsContent />
       <div className="countdown-clock">
