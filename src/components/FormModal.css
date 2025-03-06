@@ -16,7 +16,9 @@
 
 .form-input {
   outline: none;
-  padding: 5px;
+  font-size: 16px;
+  font-family: "Times";
+  padding: 5px 5px 5px 10px;
   border-radius: 4px;
   border: solid 1px black;
   height: 34px;

@@ -1,9 +1,21 @@
 import "./FormModal.css";
 import Modal from "react-modal";
-import { useState } from "react";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    borderRadius: "16px",
+    width: "400px",
+  },
+};
 
 function FormModal(props) {
-  const { modalIsOpen, onClose, customStyles, children } = props;
+  const { onClose, children } = props;
 
   const onModalClose = () => {
     onClose();
@@ -11,7 +23,7 @@ function FormModal(props) {
 
   return (
     <Modal
-      isOpen={modalIsOpen}
+      isOpen={true}
       ariaHideApp={false}
       onRequestClose={onModalClose}
       style={customStyles}
