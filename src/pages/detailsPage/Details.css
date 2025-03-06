@@ -1,13 +1,14 @@
 .sky-background-image {
   background-image: url("~/src/images/background-4.jpg");
   background-size: cover;
-  height: 700px;
+  height: 725px;
 }
 
 .name-header {
   text-align: center;
   font-size: 65px;
   font-family: "Amsterdam", Arial, serif;
+  color: rgb(13, 75, 133);
 }
 
 .countdown-clock {
@@ -16,8 +17,18 @@
   justify-content: center;
 }
 
-.rsvp-button-container {
-  margin-top: 50px;
+.rsvp-button {
+  margin: 50px auto;
   display: flex;
   justify-content: center;
+  border-radius: 30px;
+  padding: 20px 20px;
+  background: #fff !important;
+  color: #646464;
+  font-size: 16px;
+  font-family: Sofia Sans Condensed;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
 }
