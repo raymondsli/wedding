@@ -1,7 +1,6 @@
-import "./MainCourseButtonAndModal.css";
-import Modal from "react-modal";
 import { useState } from "react";
 import FormModal from "../../components/FormModal";
+import Select from "react-select";
 
 const customStyles = {
   content: {
@@ -16,10 +15,17 @@ const customStyles = {
   },
 };
 
+const mainCourseOptions = [
+  { value: "wild mushroom ravioli", label: "Wild Mushroom Ravioli" },
+  { value: "10oz filet mignon", label: "10oz Filet Mignon" },
+  { value: "chilean sea bass", label: "Chilean Sea Bass" },
+  { value: "jidori roasted chicken", label: "Jidori Roasted Chicken" },
+];
+
 function MainCourseButtonAndModal() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
-  const [mainCourseOption, setMainCourseOption] = useState("");
+  const [mainCourseOption, setMainCourseOption] = useState(null);
 
   return (
     <>
@@ -42,6 +48,7 @@ function MainCourseButtonAndModal() {
                 type="text"
                 id="fname"
                 name="fname"
+                className="form-input"
                 onChange={(e) => setMainCourseOption(e.target.value)}
               />
             </div>
@@ -50,26 +57,23 @@ function MainCourseButtonAndModal() {
             <div className="form-text">
               <label for="main-course">Choose your main course</label>
             </div>
-            <div>
-              <select
-                id="main-course"
-                name="main-course"
-                onChange={(e) => setMainCourseOption(e.target.value)}
-              >
-                <option disabled value>
-                  {" "}
-                  -- select an option --{" "}
-                </option>
-                <option value="wild mushroom ravioli">
-                  Wild Mushroom Ravioli
-                </option>
-                <option value="10oz filet mignon">10oz Filet Mignon</option>
-                <option value="chilean sea bass">Chilean Sea Bass</option>
-                <option value="jidori roasted chicken">
-                  Jidori Roasted Chickn
-                </option>
-              </select>
-            </div>
+            <Select
+              styles={{
+                control: (baseStyles, state) => ({
+                  ...baseStyles,
+                  border: "solid 1px black",
+                  boxShadow: "none",
+                  "&:hover": {
+                    border: "solid 1px black !important",
+                  },
+                }),
+              }}
+              placeholder="Select option"
+              value={mainCourseOption}
+              onChange={setMainCourseOption}
+              options={mainCourseOptions}
+              menuPortalTarget={document.body}
+            />
           </div>
         </form>
         <button onClick={() => setIsOpen(false)}>close</button>
