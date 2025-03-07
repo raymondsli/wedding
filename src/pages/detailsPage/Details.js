@@ -16,6 +16,8 @@ function Details() {
       ref={(newRef) => setContainerRef(newRef)}
     >
       <div className="background-image" />
+      <div></div>
+      <div className="couple-image" />
       <h1 className="name-header">Yi-Nung & Raymond</h1>
       <div className="details-content">
         <div className="details-text-container details-text">
