@@ -16,7 +16,8 @@ function RSVPModal(props) {
   const [isConfirmationClicked, setIsConfirmationClicked] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [showFailModal, setShowFailModal] = useState(false);
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [attendingCermony, setAttendingCeremony] = useState("");
   const [attendingDinner, setAttendingDinner] = useState("");
 
@@ -24,15 +25,18 @@ function RSVPModal(props) {
     setIsConfirmationClicked(false);
     setShowSuccessModal(false);
     setShowFailModal(false);
-    setName("");
+    setFirstName("");
+    setLastName("");
     setAttendingCeremony("");
     setAttendingDinner("");
     closeModal();
   };
 
   const toolTipMessage = () => {
-    if (name == "") {
-      return "Name is missing";
+    if (firstName == "") {
+      return "First name is missing";
+    } else if (lastName == "") {
+      return "Last name is missing";
     }
     if (attendingCermony == "" && attendingDinner == "") {
       return "Ceremony and dinner attendance is missing";
@@ -51,7 +55,7 @@ function RSVPModal(props) {
         "service_tubf9o9",
         "template_q8zrmkf",
         {
-          name,
+          name: `${firstName} ${lastName}`,
           message: `Attending Ceremony: ${attendingCermony.label}. Attending Dinner: ${attendingDinner.label}.`,
         },
         {
@@ -141,16 +145,31 @@ function RSVPModal(props) {
       <form>
         <div className="form-field">
           <div className="form-text">
-            <label for="fname">Name</label>
+            <label for="fname">First Name</label>
           </div>
           <div>
             <input
               type="text"
-              placeholder="Name"
+              placeholder="First Name"
               id="fname"
               name="fname"
               className="form-input"
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+          </div>
+        </div>
+        <div className="form-field">
+          <div className="form-text">
+            <label for="lname">Last Name</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="lname"
+              name="lname"
+              className="form-input"
+              onChange={(e) => setLastName(e.target.value)}
             />
           </div>
         </div>
@@ -160,7 +179,7 @@ function RSVPModal(props) {
           </div>
           <Select
             styles={{
-              control: (baseStyles, state) => ({
+              control: (baseStyles) => ({
                 ...baseStyles,
                 border: "solid 1px black",
                 boxShadow: "none",
@@ -168,7 +187,7 @@ function RSVPModal(props) {
                   border: "solid 1px black !important",
                 },
               }),
-              dropdownIndicator: (baseStyles, state) => ({
+              dropdownIndicator: (baseStyles) => ({
                 ...baseStyles,
                 color: "black",
               }),
@@ -186,7 +205,7 @@ function RSVPModal(props) {
           </div>
           <Select
             styles={{
-              control: (baseStyles, state) => ({
+              control: (baseStyles) => ({
                 ...baseStyles,
                 border: "solid 1px black",
                 boxShadow: "none",
@@ -194,7 +213,7 @@ function RSVPModal(props) {
                   border: "solid 1px black !important",
                 },
               }),
-              dropdownIndicator: (baseStyles, state) => ({
+              dropdownIndicator: (baseStyles) => ({
                 ...baseStyles,
                 color: "black",
               }),
@@ -214,7 +233,8 @@ function RSVPModal(props) {
           onClick={submitRSVPForm}
           toolTip={toolTipMessage()}
           isDisabled={
-            name == "" ||
+            firstName == "" ||
+            lastName == "" ||
             attendingCermony == "" ||
             attendingDinner == "" ||
             isConfirmationClicked
