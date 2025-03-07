@@ -2,7 +2,7 @@ import "./Details.css";
 import RSVPModal from "./RSVPModal";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 function Details() {
   const [showRSVPModal, setShowRSVPModal] = useState(false);

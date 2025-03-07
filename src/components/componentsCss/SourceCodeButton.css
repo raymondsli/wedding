@@ -1,0 +1,23 @@
+.source-code-link-wrapper {
+  text-decoration: none;
+}
+
+.source-code-button {
+  margin: 100px auto 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background: #fff;
+  color: #646464;
+  font-size: 12px;
+  font-family: "Sofia", "Sans", "Condensed";
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  &:hover {
+    background-color: lightgray;
+    color: darkblue;
+  }
+}

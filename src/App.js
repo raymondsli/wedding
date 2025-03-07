@@ -5,6 +5,7 @@ import Details from "./pages/detailsPage/Details.js";
 import Schedule from "./pages/schedulePage/Schedule.js";
 import Dinner from "./pages/dinnerPage/Dinner.js";
 import FAQ from "./pages/faqPage/FAQ.js";
+import SourceCodeButton from "./components/SourceCodeButton";
 import { useRef } from "react";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Dinner ref={dinnerRef} />
       <Separator />
       <FAQ ref={faqRef} />
+      <SourceCodeButton />
     </div>
   );
 }

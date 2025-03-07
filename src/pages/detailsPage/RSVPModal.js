@@ -46,7 +46,7 @@ function RSVPModal(props) {
   };
 
   const handleDinnerAttendance = (e) => {
-    if (e.label == "Yes") {
+    if (e.label === "Yes") {
       setShowMainCourseDropdown(true);
     } else {
       setShowMainCourseDropdown(false);
@@ -56,18 +56,18 @@ function RSVPModal(props) {
   };
 
   const toolTipMessage = () => {
-    if (firstName == "") {
+    if (firstName === "") {
       return "First name is missing";
-    } else if (lastName == "") {
+    } else if (lastName === "") {
       return "Last name is missing";
     }
-    if (attendingCermony == "" && attendingDinner == "") {
+    if (attendingCermony === "" && attendingDinner === "") {
       return "Ceremony and dinner attendance is missing";
-    } else if (attendingCermony == "") {
+    } else if (attendingCermony === "") {
       return "Ceremony attendance is missing";
-    } else if (attendingDinner == "") {
+    } else if (attendingDinner === "") {
       return "Dinner attendance is missing";
-    } else if (showMainCourseDropdown && mainCourseOption == "") {
+    } else if (showMainCourseDropdown && mainCourseOption === "") {
       return "Main course selection is missing";
     }
     return null;
@@ -98,7 +98,7 @@ function RSVPModal(props) {
   };
 
   const confirmationMessage = () => {
-    if (attendingCermony.label == "Yes" && attendingDinner.label == "Yes") {
+    if (attendingCermony.label === "Yes" && attendingDinner.label === "Yes") {
       return (
         <>
           <div style={{ marginBottom: "5px" }}>RSVP received!</div>
@@ -108,7 +108,7 @@ function RSVPModal(props) {
           <div>Thank you!</div>
         </>
       );
-    } else if (attendingCermony.label == "Yes") {
+    } else if (attendingCermony.label === "Yes") {
       return (
         <>
           <div style={{ marginBottom: "5px" }}>RSVP received!</div>
@@ -118,7 +118,7 @@ function RSVPModal(props) {
           <div>Thank you!</div>
         </>
       );
-    } else if (attendingDinner.label == "Yes") {
+    } else if (attendingDinner.label === "Yes") {
       return (
         <>
           <div style={{ marginBottom: "5px" }}>RSVP received!</div>
@@ -276,11 +276,11 @@ function RSVPModal(props) {
           onClick={submitRSVPForm}
           toolTip={toolTipMessage()}
           isDisabled={
-            firstName == "" ||
-            lastName == "" ||
-            attendingCermony == "" ||
-            attendingDinner == "" ||
-            (showMainCourseDropdown && mainCourseOption == "") ||
+            firstName === "" ||
+            lastName === "" ||
+            attendingCermony === "" ||
+            attendingDinner === "" ||
+            (showMainCourseDropdown && mainCourseOption === "") ||
             isConfirmationClicked
           }
           isActive={isConfirmationClicked}
