@@ -19,6 +19,7 @@
 
 .couple-image {
   background-image: url("~/src/images/couple-photo.jpg");
+  opacity: 1;
   background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
