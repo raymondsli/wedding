@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd48c08d.css",
-    "main.js": "/static/js/main.f3d75bdf.js",
-    "static/media/background-4.jpg": "/static/media/background-4.deb9b2d8691cb1059cae.jpg",
+    "main.css": "/static/css/main.53444e25.css",
+    "main.js": "/static/js/main.9920ce38.js",
+    "static/media/couple-photo.jpg": "/static/media/couple-photo.ecb6b39220337884f128.jpg",
     "static/media/Caveat.ttf": "/static/media/Caveat.31f0a02d84d42627c894.ttf",
+    "static/media/background-6.jpg": "/static/media/background-6.f31d7f3d706fdfcbdda1.jpg",
     "static/media/PTSerif-Regular.ttf": "/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
     "static/media/dinner-menu.jpg": "/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
     "static/media/Charm-Regular.ttf": "/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
     "static/media/AmsterdamOne.ttf": "/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
     "index.html": "/index.html",
-    "main.fd48c08d.css.map": "/static/css/main.fd48c08d.css.map",
-    "main.f3d75bdf.js.map": "/static/js/main.f3d75bdf.js.map"
+    "main.53444e25.css.map": "/static/css/main.53444e25.css.map",
+    "main.9920ce38.js.map": "/static/js/main.9920ce38.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd48c08d.css",
-    "static/js/main.f3d75bdf.js"
+    "static/css/main.53444e25.css",
+    "static/js/main.9920ce38.js"
   ]
 }
