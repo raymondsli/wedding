@@ -1,5 +1,7 @@
 .details-container {
-  height: 975px;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
 }
 
 .background-image {
@@ -9,7 +11,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 975px;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -22,16 +24,41 @@
   color: rgb(13, 75, 133);
 }
 
-.countdown-clock {
-  margin-top: 50px;
+.details-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.details-text-container {
   display: flex;
   justify-content: center;
 }
 
-.rsvp-button {
-  margin: 70px auto;
+.details-text {
+  font-family: "Charm", Arial, serif;
+  color: rgb(13, 75, 133);
+  font-size: 30px;
+  text-align: center;
+}
+
+.countdown-clock {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
+  max-width: 100%;
+}
+
+.rsvp-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.rsvp-button {
   border-radius: 30px;
   padding: 20px 20px;
   background: #fff !important;
