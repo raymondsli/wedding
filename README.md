@@ -1,1 +1,1 @@
-Website for Yi-Nung + Raymond wedding. https://raymondsli.github.io/wedding/
+Website for Yi-Nung + Raymond wedding. https://www.yinungandraymond.com
