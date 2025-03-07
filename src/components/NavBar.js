@@ -13,7 +13,7 @@ function NavBar(props) {
         Schedule
       </button>
       <button className="nav-item" onClick={() => scrollToRef(dinnerRef)}>
-        Dinner
+        Dinner Menu
       </button>
       <button className="nav-item" onClick={() => scrollToRef(faqRef)}>
         FAQ

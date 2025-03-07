@@ -13,19 +13,3 @@
   background-position: center;
   height: 700px;
 }
-
-.dinner-button {
-  margin: 50px auto;
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-  padding: 20px 20px;
-  background: #fff !important;
-  color: #646464;
-  font-size: 16px;
-  font-family: "Sofia", "Sans", "Condensed";
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: solid 2px black;
-}

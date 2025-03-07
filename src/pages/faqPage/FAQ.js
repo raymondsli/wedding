@@ -2,6 +2,8 @@ import "./FAQ.css";
 import FAQRow from "./FAQRow";
 
 const questionAndAnswers = {
+  "When do I need to RSVP by?":
+    "Please RSVP by April 15th at the latest. If you are unsure or need more time, please reach out directly to us.",
   "What is the dress code?":
     "The dress code will be formal attire, meaning a suit for men and a dress for women. No sandals, slippers, or jeans. For colors, preferably light blue or yellow (to match the wedding flower colors), but other colors (black, blue, gray, etc) are fine as well.",
   "Can I bring a plus one?":
