@@ -8,7 +8,16 @@ import emailjs from "@emailjs/browser";
 const attendanceOptions = [
   { value: "Yes", label: "Yes" },
   { value: "No", label: "No" },
-  { value: "Unsure", label: "Unsure" },
+];
+
+const mainCourseOptions = [
+  {
+    value: "wild mushroom ravioli",
+    label: "Wild Mushroom Ravioli (vegetarian)",
+  },
+  { value: "10oz filet mignon", label: "10oz Filet Mignon" },
+  { value: "chilean sea bass", label: "Chilean Sea Bass" },
+  { value: "jidori roasted chicken", label: "Jidori Roasted Chicken" },
 ];
 
 function RSVPModal(props) {
@@ -20,6 +29,8 @@ function RSVPModal(props) {
   const [lastName, setLastName] = useState("");
   const [attendingCermony, setAttendingCeremony] = useState("");
   const [attendingDinner, setAttendingDinner] = useState("");
+  const [showMainCourseDropdown, setShowMainCourseDropdown] = useState(false);
+  const [mainCourseOption, setMainCourseOption] = useState("");
 
   const handleClose = () => {
     setIsConfirmationClicked(false);
@@ -29,7 +40,19 @@ function RSVPModal(props) {
     setLastName("");
     setAttendingCeremony("");
     setAttendingDinner("");
+    setShowMainCourseDropdown(false);
+    setMainCourseOption("");
     closeModal();
+  };
+
+  const handleDinnerAttendance = (e) => {
+    if (e.label == "Yes") {
+      setShowMainCourseDropdown(true);
+    } else {
+      setShowMainCourseDropdown(false);
+      setMainCourseOption("");
+    }
+    setAttendingDinner(e);
   };
 
   const toolTipMessage = () => {
@@ -44,6 +67,8 @@ function RSVPModal(props) {
       return "Ceremony attendance is missing";
     } else if (attendingDinner == "") {
       return "Dinner attendance is missing";
+    } else if (showMainCourseDropdown && mainCourseOption == "") {
+      return "Main course selection is missing";
     }
     return null;
   };
@@ -56,7 +81,7 @@ function RSVPModal(props) {
         "template_q8zrmkf",
         {
           name: `${firstName} ${lastName}`,
-          message: `Attending Ceremony: ${attendingCermony.label}. Attending Dinner: ${attendingDinner.label}.`,
+          message: `Attending Ceremony: ${attendingCermony.label}. Attending Dinner: ${attendingDinner.label}. Main course selection: ${mainCourseOption.label}.`,
         },
         {
           publicKey: "4-TX7d682kI7opsP_",
@@ -103,23 +128,13 @@ function RSVPModal(props) {
           <div>Thank you!</div>
         </>
       );
-    } else if (
-      attendingCermony.label == "No" &&
-      attendingDinner.label == "No"
-    ) {
-      return (
-        <>
-          <div style={{ marginBottom: "5px" }}>No worries!</div>
-          <div style={{ marginBottom: "5px" }}>
-            Guess we'll have to see you some other time then!
-          </div>
-        </>
-      );
     }
     return (
       <>
-        <div style={{ marginBottom: "5px" }}>RSVP Received!</div>
-        <div style={{ marginBottom: "5px" }}>We hope to see you there!</div>
+        <div style={{ marginBottom: "5px" }}>No worries!</div>
+        <div style={{ marginBottom: "5px" }}>
+          Guess we'll have to see you some other time then!
+        </div>
       </>
     );
   };
@@ -220,11 +235,39 @@ function RSVPModal(props) {
             }}
             placeholder="Select option"
             value={attendingDinner}
-            onChange={setAttendingDinner}
+            onChange={(e) => handleDinnerAttendance(e)}
             options={attendanceOptions}
             menuPortalTarget={document.body}
           />
         </div>
+        {showMainCourseDropdown && (
+          <div className="form-field">
+            <div className="form-text">
+              <label for="main-course">Choose your main course</label>
+            </div>
+            <Select
+              styles={{
+                control: (baseStyles, state) => ({
+                  ...baseStyles,
+                  border: "solid 1px black",
+                  boxShadow: "none",
+                  "&:hover": {
+                    border: "solid 1px black !important",
+                  },
+                }),
+                dropdownIndicator: (baseStyles, state) => ({
+                  ...baseStyles,
+                  color: "black",
+                }),
+              }}
+              placeholder="Select option"
+              value={mainCourseOption}
+              onChange={setMainCourseOption}
+              options={mainCourseOptions}
+              menuPortalTarget={document.body}
+            />
+          </div>
+        )}
       </form>
       <div className="form-buttons-container">
         <FormButton text="Close" onClick={handleClose} isDisabled={false} />
@@ -237,6 +280,7 @@ function RSVPModal(props) {
             lastName == "" ||
             attendingCermony == "" ||
             attendingDinner == "" ||
+            (showMainCourseDropdown && mainCourseOption == "") ||
             isConfirmationClicked
           }
           isActive={isConfirmationClicked}
