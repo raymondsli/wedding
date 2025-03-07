@@ -20,10 +20,10 @@ function Schedule(props) {
           Pacific Coast Hwy Unit A, Dana Point, CA 92629)
         </div>
         <div className="schedule-content-text">
-          7:15pm-9:00pm: Dinner and Drinks{" "}
+          7:15pm-8:30pm: Dinner and Drinks{" "}
         </div>
-        <div className="schedule-content-text">9:00pm: Wedding Cake </div>
-        <div className="schedule-content-text">9:30pm-10:00pm: Go Home</div>
+        <div className="schedule-content-text">8:30pm: Wedding Cake </div>
+        <div className="schedule-content-text">9:00pm-10:00pm: Go Home</div>
       </div>
     </div>
   );
