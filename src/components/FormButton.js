@@ -1,4 +1,4 @@
-import "./FormButton.css";
+import "./componentsCss/FormButton.css";
 
 function FormButton(props) {
   const { text, onClick, isDisabled, toolTip, isActive } = props;

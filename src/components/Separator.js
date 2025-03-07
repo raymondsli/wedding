@@ -1,4 +1,4 @@
-function Seperator() {
+function Separator() {
   return (
     <div
       style={{
@@ -9,4 +9,4 @@ function Seperator() {
     />
   );
 }
-export default Seperator;
+export default Separator;
