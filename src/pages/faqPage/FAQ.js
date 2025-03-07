@@ -26,7 +26,10 @@ const questionAndAnswers = {
     "Yes. While there is no open bar, we will be serving a few bottles of wine and feel free to order any cocktails on the restaurant's menu.",
   "What if I have dietary restrictions or want a different main course option?":
     'You can take a look at the Whitestone\'s menu <a target="_blank" href="https://whitestonerestaurant.com/dana-point-lantern-district-whitestone-restaurant-and-bar-food-menu">here</a>, and let us know which option you\'d like.',
-  "Is there a gift registry?": "No gifts and no gift registry.",
+  "Is there a gift registry?":
+    "While we appreciate the thought, we are not accepting gifts and do not have a gift registry.",
+  "This website is so cool! How can I copy it?":
+    'You can check out the source code <a target="_blank" href="https://github.com/raymondsli/wedding">here</a>.',
 };
 
 function FAQ(props) {
