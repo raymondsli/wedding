@@ -9,7 +9,8 @@ function Details() {
   const [showRSVPModal, setShowRSVPModal] = useState(false);
 
   return (
-    <div className="background-image">
+    <div className="details-container">
+      <div className="background-image" />
       <h1 className="name-header">Yi-Nung & Raymond</h1>
       <DetailsContent />
       <div className="countdown-clock">

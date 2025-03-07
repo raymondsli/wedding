@@ -1,11 +1,21 @@
+.details-container {
+  height: 975px;
+}
+
 .background-image {
   background-image: url("~/src/images/background-4.jpg");
   background-size: cover;
-  height: 900px;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 975px;
+  width: 100%;
+  z-index: -1;
 }
 
 .name-header {
-  padding-top: 100px;
+  padding-top: 125px;
   text-align: center;
   font-size: 65px;
   font-family: "Amsterdam", Arial, serif;
@@ -19,7 +29,7 @@
 }
 
 .rsvp-button {
-  margin: 50px auto;
+  margin: 70px auto;
   display: flex;
   justify-content: center;
   border-radius: 30px;
