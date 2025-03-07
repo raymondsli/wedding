@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.b14ea9c5.css",
-    "main.js": "/wedding/static/js/main.0fae109f.js",
-    "static/media/background-4.jpg": "/wedding/static/media/background-4.deb9b2d8691cb1059cae.jpg",
-    "static/media/Caveat.ttf": "/wedding/static/media/Caveat.31f0a02d84d42627c894.ttf",
-    "static/media/PTSerif-Regular.ttf": "/wedding/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
-    "static/media/dinner-menu.jpg": "/wedding/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
-    "static/media/Charm-Regular.ttf": "/wedding/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
-    "static/media/AmsterdamOne.ttf": "/wedding/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
-    "index.html": "/wedding/index.html",
-    "main.b14ea9c5.css.map": "/wedding/static/css/main.b14ea9c5.css.map",
-    "main.0fae109f.js.map": "/wedding/static/js/main.0fae109f.js.map"
+    "main.css": "/static/css/main.b3442911.css",
+    "main.js": "/static/js/main.0fae109f.js",
+    "static/media/background-4.jpg": "/static/media/background-4.deb9b2d8691cb1059cae.jpg",
+    "static/media/Caveat.ttf": "/static/media/Caveat.31f0a02d84d42627c894.ttf",
+    "static/media/PTSerif-Regular.ttf": "/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
+    "static/media/dinner-menu.jpg": "/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
+    "static/media/Charm-Regular.ttf": "/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
+    "static/media/AmsterdamOne.ttf": "/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
+    "index.html": "/index.html",
+    "main.b3442911.css.map": "/static/css/main.b3442911.css.map",
+    "main.0fae109f.js.map": "/static/js/main.0fae109f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b14ea9c5.css",
+    "static/css/main.b3442911.css",
     "static/js/main.0fae109f.js"
   ]
 }
