@@ -8,9 +8,10 @@
 
 .schedule-content-container {
   color: rgb(13, 75, 133);
-  margin-left: 30%;
+  margin-left: 50px;
 }
 
 .schedule-content-text {
   font-family: "Charm", Arial, serif;
+  font-size: 28px;
 }
