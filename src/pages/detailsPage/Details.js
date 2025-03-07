@@ -2,11 +2,13 @@ import "./Details.css";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import RSVPModal from "./RSVPModal";
+import CheckRSVPModal from "./CheckRSVPModal";
 import { useState } from "react";
 
 function Details() {
-  const [showRSVPModal, setShowRSVPModal] = useState(false);
   const [containerRef, setContainerRef] = useState(null);
+  const [showRSVPModal, setShowRSVPModal] = useState(false);
+  const [showCheckRSVPModal, setShowCheckRSVPModal] = useState(false);
 
   return (
     <div
@@ -38,8 +40,19 @@ function Details() {
           RSVP
         </button>
       </div>
+      <div className="rsvp-status-button-container">
+        <button
+          className="rsvp-status-button"
+          onClick={() => setShowCheckRSVPModal(true)}
+        >
+          Check RSVP Status
+        </button>
+      </div>
       {showRSVPModal && (
         <RSVPModal closeModal={() => setShowRSVPModal(false)} />
+      )}
+      {showCheckRSVPModal && (
+        <CheckRSVPModal closeModal={() => setShowCheckRSVPModal(false)} />
       )}
     </div>
   );

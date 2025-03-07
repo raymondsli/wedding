@@ -5,6 +5,7 @@ function SourceCodeButton() {
     <a
       className="source-code-link-wrapper"
       target="_blank"
+      rel="noreferrer"
       href="https://github.com/raymondsli/wedding"
     >
       <button className="source-code-button">Source Code</button>

@@ -4,6 +4,12 @@
   margin-bottom: 10px;
 }
 
+.modal-description {
+  font-family: "PTSerif";
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
 .form-text {
   font-family: "Caveat";
   font-size: 20px;
