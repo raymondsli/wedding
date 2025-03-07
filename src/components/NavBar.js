@@ -1,4 +1,4 @@
-import "./componentsCss/NavBar.css";
+import "./css/NavBar.css";
 
 function NavBar(props) {
   const { scheduleRef, dinnerRef, faqRef } = props;
