@@ -1,7 +1,6 @@
 import { useState } from "react";
 import InfoModal from "../../components/InfoModal";
 import FormModal from "../../components/FormModal";
-import FormButton from "../../components/FormButton";
 import Select from "react-select";
 import emailjs from "@emailjs/browser";
 
@@ -55,7 +54,7 @@ function RSVPModal(props) {
     setAttendingDinner(e);
   };
 
-  const toolTipMessage = () => {
+  const tooltipMessage = () => {
     if (firstName === "") {
       return "First name is missing";
     } else if (lastName === "") {
@@ -155,137 +154,123 @@ function RSVPModal(props) {
   }
 
   return (
-    <FormModal onClose={handleClose}>
+    <FormModal
+      onClose={handleClose}
+      onSubmit={submitRSVPForm}
+      submitTooltip={tooltipMessage()}
+      isSubmitDisabled={
+        firstName === "" ||
+        lastName === "" ||
+        attendingCermony === "" ||
+        attendingDinner === "" ||
+        (showMainCourseDropdown && mainCourseOption === "") ||
+        isConfirmationClicked
+      }
+      isSubmitActive={isConfirmationClicked}
+    >
       <h2 className="modal-title-text">RSVP</h2>
-      <form>
-        <div className="form-field">
-          <div className="form-text">
-            <label for="fname">First Name</label>
-          </div>
-          <div>
-            <input
-              type="text"
-              placeholder="First Name"
-              id="fname"
-              name="fname"
-              className="form-input"
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="form-field">
-          <div className="form-text">
-            <label for="lname">Last Name</label>
-          </div>
-          <div>
-            <input
-              type="text"
-              placeholder="Last Name"
-              id="lname"
-              name="lname"
-              className="form-input"
-              onChange={(e) => setLastName(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="form-field">
-          <div className="form-text">
-            <label for="main-course">Will you be attending the ceremony?</label>
-          </div>
-          <Select
-            styles={{
-              control: (baseStyles) => ({
-                ...baseStyles,
-                border: "solid 1px black",
-                boxShadow: "none",
-                "&:hover": {
-                  border: "solid 1px black !important",
-                },
-              }),
-              dropdownIndicator: (baseStyles) => ({
-                ...baseStyles,
-                color: "black",
-              }),
-            }}
-            placeholder="Select option"
-            value={attendingCermony}
-            onChange={setAttendingCeremony}
-            options={attendanceOptions}
-            menuPortalTarget={document.body}
+      <div className="form-field">
+        <div className="form-text">First Name</div>
+        <div>
+          <input
+            type="text"
+            placeholder="First Name"
+            id="fname"
+            name="fname"
+            className="form-input"
+            onChange={(e) => setFirstName(e.target.value)}
           />
         </div>
-        <div className="form-field">
-          <div className="form-text">
-            <label for="main-course">Will you be attending the dinner?</label>
-          </div>
-          <Select
-            styles={{
-              control: (baseStyles) => ({
-                ...baseStyles,
-                border: "solid 1px black",
-                boxShadow: "none",
-                "&:hover": {
-                  border: "solid 1px black !important",
-                },
-              }),
-              dropdownIndicator: (baseStyles) => ({
-                ...baseStyles,
-                color: "black",
-              }),
-            }}
-            placeholder="Select option"
-            value={attendingDinner}
-            onChange={(e) => handleDinnerAttendance(e)}
-            options={attendanceOptions}
-            menuPortalTarget={document.body}
+      </div>
+      <div className="form-field">
+        <div className="form-text">Last Name</div>
+        <div>
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="lname"
+            name="lname"
+            className="form-input"
+            onChange={(e) => setLastName(e.target.value)}
           />
         </div>
-        {showMainCourseDropdown && (
-          <div className="form-field">
-            <div className="form-text">
-              <label for="main-course">Choose your main course</label>
-            </div>
-            <Select
-              styles={{
-                control: (baseStyles, state) => ({
-                  ...baseStyles,
-                  border: "solid 1px black",
-                  boxShadow: "none",
-                  "&:hover": {
-                    border: "solid 1px black !important",
-                  },
-                }),
-                dropdownIndicator: (baseStyles, state) => ({
-                  ...baseStyles,
-                  color: "black",
-                }),
-              }}
-              placeholder="Select option"
-              value={mainCourseOption}
-              onChange={setMainCourseOption}
-              options={mainCourseOptions}
-              menuPortalTarget={document.body}
-            />
-          </div>
-        )}
-      </form>
-      <div className="form-buttons-container">
-        <FormButton text="Close" onClick={handleClose} isDisabled={false} />
-        <FormButton
-          text="Submit"
-          onClick={submitRSVPForm}
-          toolTip={toolTipMessage()}
-          isDisabled={
-            firstName === "" ||
-            lastName === "" ||
-            attendingCermony === "" ||
-            attendingDinner === "" ||
-            (showMainCourseDropdown && mainCourseOption === "") ||
-            isConfirmationClicked
-          }
-          isActive={isConfirmationClicked}
+      </div>
+      <div className="form-field">
+        <div className="form-text">Will you be attending the ceremony?</div>
+        <Select
+          styles={{
+            control: (baseStyles) => ({
+              ...baseStyles,
+              border: "solid 1px black",
+              boxShadow: "none",
+              "&:hover": {
+                border: "solid 1px black !important",
+              },
+            }),
+            dropdownIndicator: (baseStyles) => ({
+              ...baseStyles,
+              color: "black",
+            }),
+          }}
+          placeholder="Select option"
+          value={attendingCermony}
+          onChange={setAttendingCeremony}
+          options={attendanceOptions}
+          menuPortalTarget={document.body}
         />
       </div>
+      <div className="form-field">
+        <div className="form-text">Will you be attending the dinner?</div>
+        <Select
+          styles={{
+            control: (baseStyles) => ({
+              ...baseStyles,
+              border: "solid 1px black",
+              boxShadow: "none",
+              "&:hover": {
+                border: "solid 1px black !important",
+              },
+            }),
+            dropdownIndicator: (baseStyles) => ({
+              ...baseStyles,
+              color: "black",
+            }),
+          }}
+          placeholder="Select option"
+          value={attendingDinner}
+          onChange={(e) => handleDinnerAttendance(e)}
+          options={attendanceOptions}
+          menuPortalTarget={document.body}
+        />
+      </div>
+      {showMainCourseDropdown && (
+        <div className="form-field">
+          <div className="form-text">
+            <label for="main-course">Choose your main course</label>
+          </div>
+          <Select
+            styles={{
+              control: (baseStyles, state) => ({
+                ...baseStyles,
+                border: "solid 1px black",
+                boxShadow: "none",
+                "&:hover": {
+                  border: "solid 1px black !important",
+                },
+              }),
+              dropdownIndicator: (baseStyles, state) => ({
+                ...baseStyles,
+                color: "black",
+              }),
+            }}
+            placeholder="Select option"
+            value={mainCourseOption}
+            onChange={setMainCourseOption}
+            options={mainCourseOptions}
+            menuPortalTarget={document.body}
+          />
+        </div>
+      )}
     </FormModal>
   );
 }

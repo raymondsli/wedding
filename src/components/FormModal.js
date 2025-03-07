@@ -15,23 +15,35 @@ const customStyles = {
 };
 
 function FormModal(props) {
-  const { onClose, children } = props;
-
-  const onModalClose = () => {
-    onClose();
-  };
+  const { onClose, onSubmit, submitTooltip, isSubmitDisabled, isSubmitActive } =
+    props;
 
   return (
     <Modal
       isOpen={true}
       ariaHideApp={false}
-      onRequestClose={onModalClose}
+      onRequestClose={onClose}
       style={customStyles}
     >
-      <button className="close-button" onClick={onModalClose}>
+      <button className="close-x-button" onClick={onClose}>
         &#x2715;
       </button>
-      {children}
+      {props.children}
+      <div className="form-buttons-container">
+        <button onClick={onClose} className="form-button">
+          Close
+        </button>
+        <button
+          disabled={isSubmitDisabled}
+          title={submitTooltip}
+          onClick={onSubmit}
+          className={`form-button ${
+            isSubmitActive ? "form-button-active" : ""
+          }`}
+        >
+          Submit
+        </button>
+      </div>
     </Modal>
   );
 }

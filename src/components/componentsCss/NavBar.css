@@ -1,9 +1,9 @@
 .nav-container {
   position: absolute;
-  top: 20px;
-  right: 50px;
   display: flex;
   justify-content: flex-end;
+  top: 20px;
+  right: 50px;
   z-index: 5;
 }
 
@@ -13,7 +13,7 @@
   border: none;
   background-color: transparent;
   color: darkblue;
-  font-size: 20px;
   cursor: pointer;
   font-family: cursive;
+  font-size: 20px;
 }

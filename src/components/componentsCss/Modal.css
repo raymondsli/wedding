@@ -25,7 +25,7 @@
   width: 100%;
 }
 
-.close-button {
+.close-x-button {
   background-color: transparent;
   border: none;
   height: 20px;
@@ -35,4 +35,28 @@
   right: 20px;
   cursor: pointer;
   font-size: 20px;
+}
+
+.form-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-button {
+  margin: 10px 0 10px 10px;
+  border-radius: 4px;
+  padding: 10px;
+  background: #fff;
+  font-size: 16px;
+  font-family: "PTSerif", "Sans", "Condensed";
+  font-weight: 600;
+  cursor: pointer;
+  border: solid 1px gray;
+  &:hover {
+    background-color: lightslategray;
+  }
+}
+
+.form-button-active {
+  background-color: lightgray;
 }

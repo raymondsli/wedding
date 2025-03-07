@@ -24,7 +24,7 @@ function InfoModal(props) {
       onRequestClose={onClose}
       style={customStyles}
     >
-      <button className="close-button" onClick={onClose}>
+      <button className="close-x-button" onClick={onClose}>
         &#x2715;
       </button>
       <div
