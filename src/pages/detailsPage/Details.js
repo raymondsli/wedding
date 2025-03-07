@@ -1,7 +1,7 @@
 import "./Details.css";
-import RSVPModal from "./RSVPModal";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
+import RSVPModal from "./RSVPModal";
 import { useState } from "react";
 
 function Details() {

@@ -1,5 +1,4 @@
 import "./FAQ.css";
-import FAQRow from "./FAQRow";
 
 const questionAndAnswers = {
   "When do I need to RSVP by?":
@@ -34,10 +33,19 @@ function FAQ(props) {
   const renderQAndAComponent = () => {
     const rows = [];
     for (const [question, answer] of Object.entries(questionAndAnswers)) {
-      rows.push(<FAQRow question={question} answer={answer} />);
+      rows.push(
+        <div className="faq-row-container">
+          <div className="faq-row-question">{question}</div>
+          <div
+            className="faq-row-answer"
+            dangerouslySetInnerHTML={{ __html: answer }}
+          />
+        </div>
+      );
     }
     return rows;
   };
+
   return (
     <div ref={props.ref}>
       <h1 className="subsection-header">FAQ</h1>
