@@ -16,7 +16,7 @@ const questionAndAnswers = {
   "Will there be a restroom at the ceremony venue?":
     "Unfortunately, there is no public restroom at Pines Park. We will try to keep the ceremony short, but if you do need to go at any time feel free to just leave the venue.",
   "What time should I arrive at the restaurant?":
-    "We have booked the private room at Whitestone from 4:30pm - 10:00pm. We expect the ceremony to end at around 6:00pm, after which you are free to go directly to the restaurant. We will start serving food at 7:15pm so you can arrive anytime before then.",
+    "We have booked the private room at Whitestone from 4:30pm - 10:00pm. We expect the ceremony to end at around 6:20pm, after which you are free to go directly to the restaurant. We will start serving food at 7:15pm so you can arrive anytime before then.",
   "What do I do when I arrive at the restaurant?":
     "When you arrive, either go directly to the private room or ask restaurant staff to take you there. Note that if you are early, the room may be empty when you arrive. We will make seating arrangements for each guest, so once in the room you can look for your name and find your seat. If the seating arrangements have not been set up yet, please wait until we finish setting up.",
   "Will there be parking at the restaurant?":

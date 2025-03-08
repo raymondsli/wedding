@@ -6,15 +6,11 @@ import CheckRSVPModal from "./CheckRSVPModal";
 import { useState } from "react";
 
 function Details() {
-  const [containerRef, setContainerRef] = useState(null);
   const [showRSVPModal, setShowRSVPModal] = useState(false);
   const [showCheckRSVPModal, setShowCheckRSVPModal] = useState(false);
 
   return (
-    <div
-      className="details-container"
-      ref={(newRef) => setContainerRef(newRef)}
-    >
+    <div className="details-container">
       <div className="background-image" />
       <div></div>
       <div className="couple-image" />
@@ -27,7 +23,7 @@ function Details() {
           34941 Camino Capistrano, Capistrano Beach, CA 92624
         </div>
       </div>
-      {containerRef != null && containerRef.offsetWidth >= 500 && (
+      {window.innerWidth >= 500 && (
         <div className="countdown-clock">
           <FlipClockCountdown
             to={"2025-09-06T17:00:00"}

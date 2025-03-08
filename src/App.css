@@ -30,4 +30,7 @@
   font-size: 65px;
   font-family: "Amsterdam", Arial, serif;
   color: #646464;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
