@@ -1,5 +1,10 @@
 import "./css/Modal.css";
+
+import { useContext } from "react";
+import AppContext from "../AppContext";
 import Modal from "react-modal";
+
+import { getText } from "../stringTranslations";
 
 const customStyles = {
   content: {
@@ -18,6 +23,7 @@ const customStyles = {
 function FormModal(props) {
   const { onClose, onSubmit, submitTooltip, isSubmitDisabled, isSubmitActive } =
     props;
+  const language = useContext(AppContext);
 
   return (
     <Modal
@@ -32,7 +38,7 @@ function FormModal(props) {
       {props.children}
       <div className="form-buttons-container">
         <button onClick={onClose} className="form-button">
-          Close
+          {getText("Close", language)}
         </button>
         <button
           disabled={isSubmitDisabled}
@@ -42,7 +48,7 @@ function FormModal(props) {
             isSubmitActive ? "form-button-active" : ""
           }`}
         >
-          Submit
+          {getText("Submit", language)}
         </button>
       </div>
     </Modal>

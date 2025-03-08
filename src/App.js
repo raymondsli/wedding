@@ -16,7 +16,7 @@ function App() {
   const faqRef = useRef(null);
 
   return (
-    <AppContext.Provider value="English">
+    <AppContext.Provider value="Chinese">
       <NavBar scheduleRef={scheduleRef} dinnerRef={dinnerRef} faqRef={faqRef} />
       <Details />
       <Schedule ref={scheduleRef} />

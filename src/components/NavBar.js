@@ -1,7 +1,13 @@
 import "./css/NavBar.css";
 
+import { useContext } from "react";
+import AppContext from "../AppContext";
+
+import { getText } from "../stringTranslations";
+
 function NavBar(props) {
   const { scheduleRef, dinnerRef, faqRef } = props;
+  const language = useContext(AppContext);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -15,19 +21,19 @@ function NavBar(props) {
         className={"nav-item" + (isMobile ? " mobile" : "")}
         onClick={() => scrollToRef(scheduleRef)}
       >
-        Schedule
+        {getText("Schedule", language)}
       </button>
       <button
         className={"nav-item" + (isMobile ? " mobile" : "")}
         onClick={() => scrollToRef(dinnerRef)}
       >
-        Dinner Menu
+        {getText("Dinner Menu", language)}
       </button>
       <button
         className={"nav-item" + (isMobile ? " mobile" : "")}
         onClick={() => scrollToRef(faqRef)}
       >
-        FAQ
+        {getText("FAQ", language)}
       </button>
     </div>
   );
