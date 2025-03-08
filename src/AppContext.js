@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-const PageNameContext = createContext("English");
+const AppContext = createContext("English");
 
-export default PageNameContext;
+export default AppContext;

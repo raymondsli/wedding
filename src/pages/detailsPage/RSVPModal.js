@@ -5,22 +5,7 @@ import FormModal from "../../components/FormModal";
 import Select from "react-select";
 import emailjs from "@emailjs/browser";
 
-import { translations } from "../../stringTranslations";
-
-const attendanceOptions = [
-  { value: "Yes", label: "Yes" },
-  { value: "No", label: "No" },
-];
-
-const mainCourseOptions = [
-  {
-    value: "wild mushroom ravioli",
-    label: "Wild Mushroom Ravioli (vegetarian)",
-  },
-  { value: "10oz filet mignon", label: "10oz Filet Mignon" },
-  { value: "chilean sea bass", label: "Chilean Sea Bass" },
-  { value: "jidori roasted chicken", label: "Jidori Roasted Chicken" },
-];
+import { getText } from "../../stringTranslations";
 
 function RSVPModal(props) {
   const { closeModal } = props;
@@ -34,8 +19,28 @@ function RSVPModal(props) {
   const [showMainCourseDropdown, setShowMainCourseDropdown] = useState(false);
   const [mainCourseOption, setMainCourseOption] = useState("");
   const [additionalMessage, setAdditionalMessage] = useState("");
-
   const language = useContext(AppContext);
+
+  const attendanceOptions = [
+    { value: "Yes", label: getText("Yes", language) },
+    { value: "No", label: getText("No", language) },
+  ];
+
+  const mainCourseOptions = [
+    {
+      value: "wild mushroom ravioli",
+      label: getText("Wild Mushroom Ravioli (vegetarian)", language),
+    },
+    {
+      value: "10oz filet mignon",
+      label: getText("10oz Filet Mignon", language),
+    },
+    { value: "chilean sea bass", label: getText("Chilean Sea Bass", language) },
+    {
+      value: "jidori roasted chicken",
+      label: getText("Jidori Roasted Chicken", language),
+    },
+  ];
 
   const handleClose = () => {
     setIsConfirmationClicked(false);
@@ -62,18 +67,18 @@ function RSVPModal(props) {
 
   const tooltipMessage = () => {
     if (firstName === "") {
-      return "First name is missing";
+      return getText("First name is missing", language);
     } else if (lastName === "") {
-      return "Last name is missing";
+      return getText("Last name is missing", language);
     }
     if (attendingCermony === "" && attendingDinner === "") {
-      return "Ceremony and dinner attendance is missing";
+      return getText("Ceremony and dinner attendance are missing", language);
     } else if (attendingCermony === "") {
-      return "Ceremony attendance is missing";
+      return getText("Ceremony attendance is missing", language);
     } else if (attendingDinner === "") {
-      return "Dinner attendance is missing";
+      return getText("Dinner attendance is missing", language);
     } else if (showMainCourseDropdown && mainCourseOption === "") {
-      return "Main course selection is missing";
+      return getText("Main course selection is missing", language);
     }
     return null;
   };
@@ -106,42 +111,51 @@ function RSVPModal(props) {
   };
 
   const confirmationMessage = () => {
-    if (attendingCermony.label === "Yes" && attendingDinner.label === "Yes") {
+    if (attendingCermony.value === "Yes" && attendingDinner.value === "Yes") {
       return (
         <>
-          <div style={{ marginBottom: "5px" }}>RSVP received!</div>
+          <div style={{ marginBottom: "5px" }}></div>
           <div style={{ marginBottom: "5px" }}>
-            We'll see you at the ceremony and dinner!
+            {getText("We'll see you at the ceremony and dinner!", language)}
           </div>
-          <div>{translations["Thank you!"][language]}</div>
+          <div>{getText("Thank you!", language)}</div>
         </>
       );
-    } else if (attendingCermony.label === "Yes") {
+    } else if (attendingCermony.value === "Yes") {
       return (
         <>
-          <div style={{ marginBottom: "5px" }}>RSVP received!</div>
           <div style={{ marginBottom: "5px" }}>
-            We'll see you at the ceremony!
+            {getText("RSVP received!", language)}
           </div>
-          <div>{translations["Thank you!"][language]}</div>
+          <div style={{ marginBottom: "5px" }}>
+            {getText("We'll see you at the ceremony!", language)}
+          </div>
+          <div>{getText("Thank you!", language)}</div>
         </>
       );
-    } else if (attendingDinner.label === "Yes") {
+    } else if (attendingDinner.value === "Yes") {
       return (
         <>
-          <div style={{ marginBottom: "5px" }}>RSVP received!</div>
           <div style={{ marginBottom: "5px" }}>
-            We'll see you at the dinner!
+            {getText("RSVP received!", language)}
           </div>
-          <div>{translations["Thank you!"][language]}</div>
+          <div style={{ marginBottom: "5px" }}>
+            {getText("We'll see you at the dinner!", language)}
+          </div>
+          <div>{getText("Thank you!", language)}</div>
         </>
       );
     }
     return (
       <>
-        <div style={{ marginBottom: "5px" }}>No worries!</div>
         <div style={{ marginBottom: "5px" }}>
-          Guess we'll have to see you some other time then!
+          {getText("No worries!", language)}
+        </div>
+        <div style={{ marginBottom: "5px" }}>
+          {getText(
+            "Guess we'll have to see you some other time then!",
+            language
+          )}
         </div>
       </>
     );
@@ -153,10 +167,13 @@ function RSVPModal(props) {
     return (
       <InfoModal onClose={handleClose}>
         <div style={{ marginBottom: "5px" }}>
-          Something went wrong with the submission.
+          {getText("Something went wrong with the submission.", language)}
         </div>
         <div>
-          Please try again later or directly message either Yi-Nung or Raymond.
+          {getText(
+            "Please try again later or directly message either Yi-Nung or Raymond.",
+            language
+          )}
         </div>
       </InfoModal>
     );
@@ -177,13 +194,13 @@ function RSVPModal(props) {
       }
       isSubmitActive={isConfirmationClicked}
     >
-      <h2 className="modal-title-text">{translations["RSVP"][language]}</h2>
+      <h2 className="modal-title-text">{getText("RSVP", language)}</h2>
       <div className="form-field">
-        <div className="form-text">First Name</div>
+        <div className="form-text">{getText("First Name", language)}</div>
         <div>
           <input
             type="text"
-            placeholder="First Name"
+            placeholder={getText("First Name", language)}
             id="fname"
             name="fname"
             className="form-input"
@@ -192,11 +209,11 @@ function RSVPModal(props) {
         </div>
       </div>
       <div className="form-field">
-        <div className="form-text">Last Name</div>
+        <div className="form-text">{getText("Last Name", language)}</div>
         <div>
           <input
             type="text"
-            placeholder="Last Name"
+            placeholder={getText("Last Name", language)}
             id="lname"
             name="lname"
             className="form-input"
@@ -205,7 +222,9 @@ function RSVPModal(props) {
         </div>
       </div>
       <div className="form-field">
-        <div className="form-text">Will you be attending the ceremony?</div>
+        <div className="form-text">
+          {getText("Will you be attending the ceremony?", language)}
+        </div>
         <Select
           styles={{
             control: (baseStyles) => ({
@@ -221,7 +240,7 @@ function RSVPModal(props) {
               color: "black",
             }),
           }}
-          placeholder="Select option"
+          placeholder={getText("Select option", language)}
           value={attendingCermony}
           onChange={setAttendingCeremony}
           options={attendanceOptions}
@@ -229,7 +248,9 @@ function RSVPModal(props) {
         />
       </div>
       <div className="form-field">
-        <div className="form-text">Will you be attending the dinner?</div>
+        <div className="form-text">
+          {getText("Will you be attending the dinner?", language)}
+        </div>
         <Select
           styles={{
             control: (baseStyles) => ({
@@ -245,7 +266,7 @@ function RSVPModal(props) {
               color: "black",
             }),
           }}
-          placeholder="Select option"
+          placeholder={getText("Select option", language)}
           value={attendingDinner}
           onChange={(e) => handleDinnerAttendance(e)}
           options={attendanceOptions}
@@ -255,7 +276,7 @@ function RSVPModal(props) {
       {showMainCourseDropdown && (
         <div className="form-field">
           <div className="form-text">
-            <label for="main-course">Choose your main course</label>
+            {getText("Choose your main course", language)}
           </div>
           <Select
             styles={{
@@ -272,7 +293,7 @@ function RSVPModal(props) {
                 color: "black",
               }),
             }}
-            placeholder="Select option"
+            placeholder={getText("Select option", language)}
             value={mainCourseOption}
             onChange={setMainCourseOption}
             options={mainCourseOptions}
@@ -282,13 +303,16 @@ function RSVPModal(props) {
       )}
       <div className="form-field">
         <div className="form-text">
-          Additional private message to the hosts (optional)
+          {getText(
+            "Additional private message to the hosts (optional)",
+            language
+          )}
         </div>
         <textarea
           className="form-text-area"
           name="additional-notes"
           rows="6"
-          placeholder="Enter your message"
+          placeholder={getText("Enter your message", language)}
           onChange={(e) => setAdditionalMessage(e.target.value)}
         ></textarea>
       </div>

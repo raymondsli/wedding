@@ -1,12 +1,16 @@
-import { useState } from "react";
-import { rsvpData } from "./RSVPData";
+import { useContext, useState } from "react";
+import AppContext from "../../AppContext";
 import InfoModal from "../../components/InfoModal";
 import FormModal from "../../components/FormModal";
+
+import { rsvpData } from "./RSVPData";
+import { getText } from "../../stringTranslations";
 
 function CheckRSVPModal(props) {
   const { closeModal } = props;
   const [name, setName] = useState("");
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const language = useContext(AppContext);
 
   const handleClose = () => {
     setName("");
@@ -15,7 +19,7 @@ function CheckRSVPModal(props) {
 
   const tooltipMessage = () => {
     if (name === "") {
-      return "Name is missing";
+      return getText("Name is missing", language);
     }
     return null;
   };
@@ -25,11 +29,13 @@ function CheckRSVPModal(props) {
       return (
         <>
           <div style={{ marginBottom: "5px" }}>
-            No RSVP status found for {name}!
+            {getText("No RSVP status found for", language)} {name}!
           </div>{" "}
           <div style={{ marginBottom: "5px", textAlign: "center" }}>
-            Please note RSVP status submissions may take a few hours to be
-            reflected.
+            {getText(
+              "Please note RSVP status submissions may take a few hours to be reflected.",
+              language
+            )}
           </div>
         </>
       );
@@ -39,13 +45,16 @@ function CheckRSVPModal(props) {
       <>
         <div style={{ marginBottom: "5px" }}>{name}</div>
         <div style={{ marginBottom: "5px" }}>
-          Attending Ceremony: {rsvpStatus[0]}
+          {getText("Attending Ceremony", language)}:{" "}
+          {getText(rsvpStatus[0], language)}
         </div>
         <div style={{ marginBottom: "5px" }}>
-          Attending Dinner: {rsvpStatus[1]}
+          {getText("Attending Dinner", language)}:{" "}
+          {getText(rsvpStatus[1], language)}
         </div>
         <div style={{ marginBottom: "5px" }}>
-          Main Course Selection: {rsvpStatus[2]}
+          {getText("Main Course Selection", language)}:{" "}
+          {getText(rsvpStatus[2], language)}
         </div>
       </>
     );
@@ -64,16 +73,19 @@ function CheckRSVPModal(props) {
     >
       <h2 className="modal-title-text">Check RSVP Status</h2>
       <div className="modal-description">
-        Check your RSVP status and main course selection.
-        <br /> Note: Status changes may take a few hours to be reflected.
+        {getText("Check your RSVP status and main course selection.", language)}
+        <br />{" "}
+        {getText(
+          "Note: Status changes may take a few hours to be reflected.",
+          language
+        )}
       </div>
       <div className="form-field">
-        <div className="form-text">Name</div>
+        <div className="form-text">{getText("Name", language)}</div>
         <div>
           <input
             type="text"
-            placeholder="Name"
-            id="name"
+            placeholder={getText("Name", language)}
             name="name"
             className="form-input"
             onChange={(e) => setName(e.target.value)}

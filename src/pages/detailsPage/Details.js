@@ -1,14 +1,18 @@
 import "./Details.css";
+import { useContext, useState } from "react";
+import AppContext from "../../AppContext";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import RSVPModal from "./RSVPModal";
 import CheckRSVPModal from "./CheckRSVPModal";
-import { useState } from "react";
+
+import { getText } from "../../stringTranslations";
 
 function Details() {
   const [showRSVPModal, setShowRSVPModal] = useState(false);
   const [showCheckRSVPModal, setShowCheckRSVPModal] = useState(false);
   const isMobile = window.innerWidth < 500;
+  const language = useContext(AppContext);
 
   return (
     <div className="details-container">
@@ -17,11 +21,13 @@ function Details() {
       <div className="couple-image" />
       {isMobile ? (
         <h1 className="name-header">
-          Yi-Nung <br /> & <br />
-          Raymond
+          {getText("Yi-Nung", language)} <br /> & <br />{" "}
+          {getText("Raymond", language)}
         </h1>
       ) : (
-        <h1 className="name-header">Yi-Nung & Raymond</h1>
+        <h1 className="name-header">
+          {getText("Yi-Nung", language)} & {getText("Raymond", language)}
+        </h1>
       )}
       <div className="details-content">
         <div
@@ -29,7 +35,7 @@ function Details() {
             "details-text-container details-text" + (isMobile ? " mobile" : "")
           }
         >
-          6th September 2025 at Pines Park
+          {getText("6th September 2025 at Pines Park", language)}
         </div>
         <div
           className={
@@ -50,6 +56,12 @@ function Details() {
         <div className="countdown-clock">
           <FlipClockCountdown
             to={"2025-09-06T17:00:00"}
+            labels={[
+              getText("Days", language),
+              getText("Hours", language),
+              getText("Minutes", language),
+              getText("Seconds", language),
+            ]}
             labelStyle={{
               color: "rgb(13, 75, 133)",
               fontFamily: "Charm, Arial, serif",
@@ -62,7 +74,7 @@ function Details() {
       )}
       <div className="rsvp-button-container">
         <button className="rsvp-button" onClick={() => setShowRSVPModal(true)}>
-          RSVP
+          {getText("RSVP", language)}
         </button>
       </div>
       <div className="rsvp-status-button-container">
@@ -70,7 +82,7 @@ function Details() {
           className="rsvp-status-button"
           onClick={() => setShowCheckRSVPModal(true)}
         >
-          Check RSVP Status
+          {getText("Check RSVP Status", language)}
         </button>
       </div>
       {showRSVPModal && (
