@@ -7,29 +7,25 @@ function NavBar(props) {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const navItemStyle =
-    window.innerWidth < 500 ? { color: "black", fontWeight: "800" } : {};
+  const isMobile = window.innerWidth < 500;
 
   return (
-    <div className="nav-container">
+    <div className={"nav-container" + (isMobile ? " mobile" : "")}>
       <button
-        className="nav-item"
+        className={"nav-item" + (isMobile ? " mobile" : "")}
         onClick={() => scrollToRef(scheduleRef)}
-        style={navItemStyle}
       >
         Schedule
       </button>
       <button
-        className="nav-item"
+        className={"nav-item" + (isMobile ? " mobile" : "")}
         onClick={() => scrollToRef(dinnerRef)}
-        style={navItemStyle}
       >
         Dinner Menu
       </button>
       <button
-        className="nav-item"
+        className={"nav-item" + (isMobile ? " mobile" : "")}
         onClick={() => scrollToRef(faqRef)}
-        style={navItemStyle}
       >
         FAQ
       </button>

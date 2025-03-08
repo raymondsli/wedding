@@ -3,8 +3,14 @@
   display: flex;
   justify-content: flex-end;
   top: 20px;
-  right: 50px;
+  right: 100px;
+  width: 100%;
   z-index: 5;
+}
+
+.nav-container.mobile {
+  justify-content: center;
+  right: 0;
 }
 
 .nav-item {
@@ -16,4 +22,9 @@
   cursor: pointer;
   font-family: cursive;
   font-size: 20px;
+}
+
+.nav-item.mobile {
+  color: black;
+  font-weight: 800;
 }

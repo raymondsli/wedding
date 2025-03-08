@@ -56,6 +56,10 @@
   text-align: center;
 }
 
+.details-text.mobile {
+  font-size: 24px;
+}
+
 .countdown-clock {
   margin-top: 50px;
   display: flex;

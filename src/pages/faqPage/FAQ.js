@@ -30,6 +30,8 @@ const questionAndAnswers = {
 };
 
 function FAQ(props) {
+  const isMobile = window.innerWidth < 500;
+
   const renderQAndAComponent = () => {
     const rows = [];
     for (const [question, answer] of Object.entries(questionAndAnswers)) {
@@ -48,7 +50,7 @@ function FAQ(props) {
 
   return (
     <div ref={props.ref}>
-      <h1 className="subsection-header">FAQ</h1>
+      <h1 className={"subsection-header" + (isMobile ? " mobile" : "")}>FAQ</h1>
       <div className="faq-container">{renderQAndAComponent()}</div>
     </div>
   );
