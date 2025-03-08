@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import AppContext from "../../AppContext";
 import InfoModal from "../../components/InfoModal";
 import FormModal from "../../components/FormModal";
 import Select from "react-select";
 import emailjs from "@emailjs/browser";
+
+import { translations } from "../../stringTranslations";
 
 const attendanceOptions = [
   { value: "Yes", label: "Yes" },
@@ -31,6 +34,8 @@ function RSVPModal(props) {
   const [showMainCourseDropdown, setShowMainCourseDropdown] = useState(false);
   const [mainCourseOption, setMainCourseOption] = useState("");
   const [additionalMessage, setAdditionalMessage] = useState("");
+
+  const language = useContext(AppContext);
 
   const handleClose = () => {
     setIsConfirmationClicked(false);
@@ -108,7 +113,7 @@ function RSVPModal(props) {
           <div style={{ marginBottom: "5px" }}>
             We'll see you at the ceremony and dinner!
           </div>
-          <div>Thank you!</div>
+          <div>{translations["Thank you!"][language]}</div>
         </>
       );
     } else if (attendingCermony.label === "Yes") {
@@ -118,7 +123,7 @@ function RSVPModal(props) {
           <div style={{ marginBottom: "5px" }}>
             We'll see you at the ceremony!
           </div>
-          <div>Thank you!</div>
+          <div>{translations["Thank you!"][language]}</div>
         </>
       );
     } else if (attendingDinner.label === "Yes") {
@@ -128,7 +133,7 @@ function RSVPModal(props) {
           <div style={{ marginBottom: "5px" }}>
             We'll see you at the dinner!
           </div>
-          <div>Thank you!</div>
+          <div>{translations["Thank you!"][language]}</div>
         </>
       );
     }
@@ -172,7 +177,7 @@ function RSVPModal(props) {
       }
       isSubmitActive={isConfirmationClicked}
     >
-      <h2 className="modal-title-text">RSVP</h2>
+      <h2 className="modal-title-text">{translations["RSVP"][language]}</h2>
       <div className="form-field">
         <div className="form-text">First Name</div>
         <div>
