@@ -42,3 +42,11 @@
   display: flex;
   justify-content: center;
 }
+
+.map-link {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

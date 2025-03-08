@@ -36,13 +36,24 @@ function Details() {
             "details-text-container details-text" + (isMobile ? " mobile" : "")
           }
         >
-          34941 Camino Capistrano, Capistrano Beach, CA 92624
+          <a
+            className="map-link"
+            target="_blank"
+            rel="noreferrer"
+            href="https://maps.app.goo.gl/gHsdY3z7cV5ySg7m7"
+          >
+            34941 Camino Capistrano, Capistrano Beach, CA 92624
+          </a>
         </div>
       </div>
       {!isMobile && (
         <div className="countdown-clock">
           <FlipClockCountdown
             to={"2025-09-06T17:00:00"}
+            labelStyle={{
+              color: "rgb(13, 75, 133)",
+              fontFamily: "Charm, Arial, serif",
+            }}
             digitBlockStyle={{
               backgroundColor: "rgb(13, 75, 133)",
             }}
