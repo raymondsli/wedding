@@ -1,6 +1,12 @@
 import "./Schedule.css";
 
+import { useContext } from "react";
+import AppContext from "../../AppContext";
+
+import { getText } from "../../stringTranslations";
+
 function Schedule(props) {
+  const language = useContext(AppContext);
   const isMobile = window.innerWidth < 500;
 
   const textClassName =
@@ -11,11 +17,12 @@ function Schedule(props) {
   return (
     <div ref={props.ref}>
       <h1 className={"subsection-header" + (isMobile ? " mobile" : "")}>
-        Schedule
+        {getText("Schedule", language)}
       </h1>
       <div className="schedule-content-container">
         <div className={textClassName}>
-          5:15pm: Arrive at Pines Park (Address:{" "}
+          5:15pm: {getText("Arrive at Pines Park", language)} (
+          {getText("Address", language)}:{" "}
           <a
             className="map-link"
             target="_blank"
@@ -26,10 +33,16 @@ function Schedule(props) {
           </a>
           )
         </div>
-        <div className={textClassName}>5:30pm-5:45pm: Wedding Ceremony</div>
-        <div className={textClassName}>5:45pm-6:30pm: Photos with Guests</div>
         <div className={textClassName}>
-          6:30pm-7:15pm: Arrive at Whitestone Restaurant & Bar (Address:{" "}
+          5:30pm-5:45pm: {getText("Wedding Ceremony", language)}
+        </div>
+        <div className={textClassName}>
+          5:45pm-6:30pm: {getText("Photos with Guests", language)}
+        </div>
+        <div className={textClassName}>
+          6:30pm-7:15pm:{" "}
+          {getText("Arrive at Whitestone Restaurant & Bar", language)} (
+          {getText("Address", language)}:{" "}
           <a
             className="map-link"
             target="_blank"
@@ -40,9 +53,15 @@ function Schedule(props) {
           </a>
           )
         </div>
-        <div className={textClassName}>7:15pm-8:30pm: Dinner and Drinks </div>
-        <div className={textClassName}>8:30pm: Wedding Cake </div>
-        <div className={textClassName}>9:00pm-10:00pm: Go Home</div>
+        <div className={textClassName}>
+          7:15pm-8:30pm: {getText("Dinner and Drinks", language)}
+        </div>
+        <div className={textClassName}>
+          8:30pm: {getText("Wedding Cake", language)}
+        </div>
+        <div className={textClassName}>
+          9:00pm-10:00pm: {getText("Go Home", language)}
+        </div>
       </div>
     </div>
   );

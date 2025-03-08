@@ -15,6 +15,10 @@ const translations = {
     English: "Dinner Menu",
     Chinese: "晚宴菜單",
   },
+  Dinner: {
+    English: "Dinner",
+    Chinese: "晚宴菜單",
+  },
   FAQ: {
     English: "FAQ",
     Chinese: "常見問題",
@@ -216,6 +220,46 @@ const translations = {
   "Main Course Selection": {
     English: "Main Course Selection",
     Chinese: "主菜選擇",
+  },
+  "Arrive at Pines Park": {
+    English: "Arrive at Pines Park",
+    Chinese: "抵達 Pines Park",
+  },
+  Address: {
+    English: "Address",
+    Chinese: "地址",
+  },
+  "Wedding Ceremony": {
+    English: "Wedding Ceremony",
+    Chinese: "婚禮典禮",
+  },
+  "Photos with Guests": {
+    English: "Photos with Guests",
+    Chinese: "與賓客合影",
+  },
+  "Arrive at Whitestone Restaurant & Bar": {
+    English: "Arrive at Whitestone Restaurant & Bar",
+    Chinese: "抵達 Whitestone Restaurant & Bar 餐廳",
+  },
+  "Dinner and Drinks": {
+    English: "Dinner and Drinks",
+    Chinese: "晚宴與飲品",
+  },
+  "Wedding Cake": {
+    English: "Wedding Cake",
+    Chinese: "婚禮蛋糕",
+  },
+  "Go Home": {
+    English: "Go Home",
+    Chinese: "返家",
+  },
+  "Source Code": {
+    English: "Source Code",
+    Chinese: "源代碼",
+  },
+  "": {
+    English: "",
+    Chinese: "",
   },
   "": {
     English: "",
