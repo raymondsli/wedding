@@ -7,6 +7,10 @@
   height: 700px;
 }
 
+.dinner-menu-image.chinese {
+  background-image: url("~/src/images/dinner-menu-chinese.png");
+}
+
 .dinner-menu-image.mobile {
   height: 450px;
 }

@@ -16,7 +16,13 @@ function Dinner(props) {
           ? getText("Dinner", language)
           : getText("Dinner Menu", language)}
       </h1>
-      <div className={"dinner-menu-image" + (isMobile ? " mobile" : "")} />
+      <div
+        className={
+          "dinner-menu-image" +
+          (language === "Chinese" ? " chinese" : "") +
+          (isMobile ? " mobile" : "")
+        }
+      />
     </div>
   );
 }
