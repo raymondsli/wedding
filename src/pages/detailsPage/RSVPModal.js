@@ -30,6 +30,7 @@ function RSVPModal(props) {
   const [attendingDinner, setAttendingDinner] = useState("");
   const [showMainCourseDropdown, setShowMainCourseDropdown] = useState(false);
   const [mainCourseOption, setMainCourseOption] = useState("");
+  const [additionalMessage, setAdditionalMessage] = useState("");
 
   const handleClose = () => {
     setIsConfirmationClicked(false);
@@ -80,7 +81,10 @@ function RSVPModal(props) {
         "template_q8zrmkf",
         {
           name: `${firstName} ${lastName}`,
-          message: `Attending Ceremony: ${attendingCermony.label}. Attending Dinner: ${attendingDinner.label}. Main course selection: ${mainCourseOption.label}.`,
+          message: `Attending Ceremony: ${attendingCermony.label}. 
+            Attending Dinner: ${attendingDinner.label}. 
+            Main course selection: ${mainCourseOption.label}. 
+            Additional message: ${additionalMessage}`,
         },
         {
           publicKey: "4-TX7d682kI7opsP_",
@@ -271,6 +275,18 @@ function RSVPModal(props) {
           />
         </div>
       )}
+      <div className="form-field">
+        <div className="form-text">
+          Additional private message to the hosts (optional)
+        </div>
+        <textarea
+          className="form-text-area"
+          name="additional-notes"
+          rows="6"
+          placeholder="Enter your message"
+          onChange={(e) => setAdditionalMessage(e.target.value)}
+        ></textarea>
+      </div>
     </FormModal>
   );
 }
