@@ -1,6 +1,6 @@
 export const rsvpData = {
-  "raymond li": ["Yes", "Yes", "Chilean Sea Bass"],
-  "yi-nung huang": ["Yes", "Yes", "10oz Filet Mignon"],
+  "raymond li": ["Yes", "Yes", "10oz Filet Mignon"],
+  "yi-nung huang": ["Yes", "Yes", "Chilean Sea Bass"],
   "linda li": ["Yes", "Yes", "Wild Mushroom Ravioli"],
   "jakub woyke": ["Yes", "Yes", "Chilean Sea Bass"],
 };

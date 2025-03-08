@@ -7,7 +7,8 @@ function NavBar(props) {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const navItemStyle = window.innerWidth < 500 ? { color: "black" } : {};
+  const navItemStyle =
+    window.innerWidth < 500 ? { color: "black", fontWeight: "800" } : {};
 
   return (
     <div className="nav-container">
