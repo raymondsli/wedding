@@ -6,7 +6,7 @@ import AppContext from "../../AppContext";
 import { getText } from "../../stringTranslations";
 
 function Schedule(props) {
-  const language = useContext(AppContext);
+  const { language } = useContext(AppContext);
   const isMobile = window.innerWidth < 500;
 
   const textClassName =

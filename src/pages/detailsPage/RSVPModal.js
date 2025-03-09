@@ -19,7 +19,7 @@ function RSVPModal(props) {
   const [showMainCourseDropdown, setShowMainCourseDropdown] = useState(false);
   const [mainCourseOption, setMainCourseOption] = useState("");
   const [additionalMessage, setAdditionalMessage] = useState("");
-  const language = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   const attendanceOptions = [
     { value: "Yes", label: getText("Yes", language) },

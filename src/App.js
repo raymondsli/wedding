@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import AppContext from "./AppContext";
 import NavBar from "./components/NavBar.js";
 import Details from "./pages/detailsPage/Details.js";
@@ -11,12 +11,13 @@ import FAQ from "./pages/faqPage/FAQ.js";
 import SourceCodeButton from "./components/SourceCodeButton";
 
 function App() {
+  const [language, setLanguage] = useState("English");
   const scheduleRef = useRef(null);
   const dinnerRef = useRef(null);
   const faqRef = useRef(null);
 
   return (
-    <AppContext.Provider value="Chinese">
+    <AppContext.Provider value={{ language, setLanguage }}>
       <NavBar scheduleRef={scheduleRef} dinnerRef={dinnerRef} faqRef={faqRef} />
       <Details />
       <Schedule ref={scheduleRef} />

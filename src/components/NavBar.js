@@ -7,7 +7,15 @@ import { getText } from "../stringTranslations";
 
 function NavBar(props) {
   const { scheduleRef, dinnerRef, faqRef } = props;
-  const language = useContext(AppContext);
+  const { language, setLanguage } = useContext(AppContext);
+
+  const toggleLanguage = () => {
+    if (language == "English") {
+      setLanguage("Chinese");
+    } else {
+      setLanguage("English");
+    }
+  };
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -17,24 +25,42 @@ function NavBar(props) {
 
   return (
     <div className={"nav-container" + (isMobile ? " mobile" : "")}>
-      <button
-        className={"nav-item" + (isMobile ? " mobile" : "")}
-        onClick={() => scrollToRef(scheduleRef)}
-      >
-        {getText("Schedule", language)}
-      </button>
-      <button
-        className={"nav-item" + (isMobile ? " mobile" : "")}
-        onClick={() => scrollToRef(dinnerRef)}
-      >
-        {getText("Dinner Menu", language)}
-      </button>
-      <button
-        className={"nav-item" + (isMobile ? " mobile" : "")}
-        onClick={() => scrollToRef(faqRef)}
-      >
-        {getText("FAQ", language)}
-      </button>
+      {isMobile && (
+        <button
+          className={"language-toggle" + (isMobile ? " mobile" : "")}
+          onClick={toggleLanguage}
+        >
+          {language === "English" ? "中文版" : "English Version"}
+        </button>
+      )}
+      <div className={"nav-scroll-container" + (isMobile ? " mobile" : "")}>
+        {!isMobile && (
+          <button
+            className={"language-toggle" + (isMobile ? " mobile" : "")}
+            onClick={toggleLanguage}
+          >
+            {language === "English" ? "中文版" : "English Version"}
+          </button>
+        )}
+        <button
+          className={"nav-item" + (isMobile ? " mobile" : "")}
+          onClick={() => scrollToRef(scheduleRef)}
+        >
+          {getText("Schedule", language)}
+        </button>
+        <button
+          className={"nav-item" + (isMobile ? " mobile" : "")}
+          onClick={() => scrollToRef(dinnerRef)}
+        >
+          {getText("Dinner Menu", language)}
+        </button>
+        <button
+          className={"nav-item" + (isMobile ? " mobile" : "")}
+          onClick={() => scrollToRef(faqRef)}
+        >
+          {getText("FAQ", language)}
+        </button>
+      </div>
     </div>
   );
 }

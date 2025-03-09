@@ -23,7 +23,7 @@ const customStyles = {
 function FormModal(props) {
   const { onClose, onSubmit, submitTooltip, isSubmitDisabled, isSubmitActive } =
     props;
-  const language = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   return (
     <Modal

@@ -2,15 +2,47 @@
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  top: 20px;
-  right: 100px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   width: 100%;
   z-index: 5;
 }
 
 .nav-container.mobile {
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-scroll-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-scroll-container.mobile {
   justify-content: center;
-  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.language-toggle {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 20px;
+  align-self: flex-start;
+  flex: 1;
+  text-align: left;
+}
+
+.language-toggle.mobile {
+  align-self: center;
 }
 
 .nav-item {

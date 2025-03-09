@@ -5,6 +5,10 @@
   padding-top: 150px;
 }
 
+.details-container.mobile {
+  padding-top: 180px;
+}
+
 .background-image {
   background-image: url("~/src/images/background-11.jpg");
   background-size: cover;

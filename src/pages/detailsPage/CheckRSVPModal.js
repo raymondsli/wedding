@@ -10,7 +10,7 @@ function CheckRSVPModal(props) {
   const { closeModal } = props;
   const [name, setName] = useState("");
   const [showInfoModal, setShowInfoModal] = useState(false);
-  const language = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   const handleClose = () => {
     setName("");
@@ -71,7 +71,9 @@ function CheckRSVPModal(props) {
       submitTooltip={tooltipMessage()}
       isSubmitDisabled={name === ""}
     >
-      <h2 className="modal-title-text">Check RSVP Status</h2>
+      <h2 className="modal-title-text">
+        {getText("Check RSVP Status", language)}
+      </h2>
       <div className="modal-description">
         {getText("Check your RSVP status and main course selection.", language)}
         <br />{" "}

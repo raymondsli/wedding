@@ -5,7 +5,7 @@ import AppContext from "../AppContext";
 import { getText } from "../stringTranslations";
 
 function SourceCodeButton() {
-  const language = useContext(AppContext);
+  const { language } = useContext(AppContext);
   return (
     <a
       className="source-code-link-wrapper"
