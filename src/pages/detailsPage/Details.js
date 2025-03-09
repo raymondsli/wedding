@@ -19,7 +19,7 @@ function Details() {
       <div></div>
       <div className="couple-image" />
       {isMobile ? (
-        <h1 className="name-header">
+        <h1 className="name-header mobile">
           {getText("Yi-Nung", language)} <br /> & <br />{" "}
           {getText("Raymond", language)}
         </h1>
@@ -72,13 +72,18 @@ function Details() {
         </div>
       )}
       <div className="rsvp-button-container">
-        <button className="rsvp-button" onClick={() => setShowRSVPModal(true)}>
+        <button
+          className={"rsvp-button" + (language === "Chinese" ? " chinese" : "")}
+          onClick={() => setShowRSVPModal(true)}
+        >
           {getText("RSVP", language)}
         </button>
       </div>
       <div className="rsvp-status-button-container">
         <button
-          className="rsvp-status-button"
+          className={
+            "rsvp-status-button" + (language === "Chinese" ? " chinese" : "")
+          }
           onClick={() => setShowCheckRSVPModal(true)}
         >
           {getText("Check RSVP Status", language)}

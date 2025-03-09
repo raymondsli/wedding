@@ -45,16 +45,16 @@ function CheckRSVPModal(props) {
       <>
         <div style={{ marginBottom: "5px" }}>{name}</div>
         <div style={{ marginBottom: "5px" }}>
-          {getText("Attending Ceremony", language)}:{" "}
-          {getText(rsvpStatus[0], language)}
+          {getText("Attending Ceremony", language)}:
+          {" " + getText(rsvpStatus[0], language)}
         </div>
         <div style={{ marginBottom: "5px" }}>
-          {getText("Attending Dinner", language)}:{" "}
-          {getText(rsvpStatus[1], language)}
+          {getText("Attending Dinner", language)}:
+          {" " + getText(rsvpStatus[1], language)}
         </div>
         <div style={{ marginBottom: "5px" }}>
-          {getText("Main Course Selection", language)}:{" "}
-          {getText(rsvpStatus[2], language)}
+          {getText("Main Course Selection", language)}:
+          {" " + getText(rsvpStatus[2], language)}
         </div>
       </>
     );
@@ -74,7 +74,11 @@ function CheckRSVPModal(props) {
       <h2 className="modal-title-text">
         {getText("Check RSVP Status", language)}
       </h2>
-      <div className="modal-description">
+      <div
+        className={
+          "modal-description" + (language === "Chinese" ? " chinese" : "")
+        }
+      >
         {getText("Check your RSVP status and main course selection.", language)}
         <br />{" "}
         {getText(

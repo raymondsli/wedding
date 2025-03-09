@@ -6,8 +6,12 @@
 
 .modal-description {
   font-family: "PTSerif";
-  font-size: 16px;
+  font-size: 12px;
   margin-bottom: 15px;
+}
+
+.modal-description.chinese {
+  font-size: 16px;
 }
 
 .form-text {

@@ -9,10 +9,6 @@ export const getText = (text, language) => {
 };
 
 const translations = {
-  "": {
-    English: "",
-    Chinese: "",
-  },
   Schedule: {
     English: "Schedule",
     Chinese: "行程安排",
@@ -77,6 +73,10 @@ const translations = {
     English: "Will you be attending the ceremony?",
     Chinese: "您會參加典禮嗎？",
   },
+  "Choose your main course": {
+    English: "Choose your main course",
+    Chinese: "選擇您的主菜",
+  },
   "Select option": {
     English: "Select option",
     Chinese: "選擇選項",
@@ -103,7 +103,7 @@ const translations = {
   },
   "10oz Filet Mignon": {
     English: "10oz Filet Mignon",
-    Chinese: "10盎司菲力牛排",
+    Chinese: "10 盎司菲力牛排",
   },
   "Chilean Sea Bass": {
     English: "Chilean Sea Bass",
@@ -262,13 +262,5 @@ const translations = {
   "Source Code": {
     English: "Source Code",
     Chinese: "源代碼",
-  },
-  "": {
-    English: "",
-    Chinese: "",
-  },
-  "": {
-    English: "",
-    Chinese: "",
   },
 };

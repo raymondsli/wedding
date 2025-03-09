@@ -40,6 +40,11 @@
   color: rgb(13, 75, 133);
 }
 
+.name-header.mobile {
+  line-height: 100px;
+  padding-bottom: 40px;
+}
+
 .details-content {
   display: flex;
   flex-direction: column;
@@ -83,12 +88,16 @@
   padding: 20px 20px;
   background: #fff !important;
   color: #646464;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Sofia", "Sans", "Condensed";
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   border: solid 2px rgb(13, 75, 133);
+}
+
+.rsvp-button.chinese {
+  font-size: 20px;
 }
 
 .rsvp-status-button-container {
@@ -103,10 +112,14 @@
   padding: 10px 10px;
   background: #fff;
   color: #646464;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Sofia", "Sans", "Condensed";
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   border: solid 2px rgb(13, 75, 133);
+}
+
+.rsvp-status-button.chinese {
+  font-size: 16px;
 }

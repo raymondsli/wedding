@@ -56,7 +56,7 @@ function RSVPModal(props) {
   };
 
   const handleDinnerAttendance = (e) => {
-    if (e.label === "Yes") {
+    if (e.value === "Yes") {
       setShowMainCourseDropdown(true);
     } else {
       setShowMainCourseDropdown(false);
