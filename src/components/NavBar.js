@@ -7,7 +7,7 @@ import { getText } from "../stringTranslations";
 
 function NavBar(props) {
   const { scheduleRef, dinnerRef, faqRef } = props;
-  const { language, setLanguage } = useContext(AppContext);
+  const { isMobile, language, setLanguage } = useContext(AppContext);
 
   const toggleLanguage = () => {
     if (language == "English") {
@@ -20,8 +20,6 @@ function NavBar(props) {
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
-
-  const isMobile = window.innerWidth < 500;
 
   return (
     <div className={"nav-container" + (isMobile ? " mobile" : "")}>

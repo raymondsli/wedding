@@ -6,8 +6,7 @@ import AppContext from "../../AppContext";
 import { getText } from "../../stringTranslations";
 
 function Dinner(props) {
-  const { language } = useContext(AppContext);
-  const isMobile = window.innerWidth < 500;
+  const { isMobile, language } = useContext(AppContext);
 
   return (
     <div className="dinner-page" ref={props.ref}>

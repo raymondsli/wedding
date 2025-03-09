@@ -12,12 +12,13 @@ import SourceCodeButton from "./components/SourceCodeButton";
 
 function App() {
   const [language, setLanguage] = useState("English");
+  const isMobile = window.innerWidth < 500;
   const scheduleRef = useRef(null);
   const dinnerRef = useRef(null);
   const faqRef = useRef(null);
 
   return (
-    <AppContext.Provider value={{ language, setLanguage }}>
+    <AppContext.Provider value={{ isMobile, language, setLanguage }}>
       <NavBar scheduleRef={scheduleRef} dinnerRef={dinnerRef} faqRef={faqRef} />
       <Details />
       <Schedule ref={scheduleRef} />

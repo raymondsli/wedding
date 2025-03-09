@@ -64,8 +64,7 @@ const questionAndAnswersChinese = {
 };
 
 function FAQ(props) {
-  const { language } = useContext(AppContext);
-  const isMobile = window.innerWidth < 500;
+  const { isMobile, language } = useContext(AppContext);
 
   const renderQAndAComponent = () => {
     const rows = [];

@@ -11,8 +11,7 @@ import { getText } from "../../stringTranslations";
 function Details() {
   const [showRSVPModal, setShowRSVPModal] = useState(false);
   const [showCheckRSVPModal, setShowCheckRSVPModal] = useState(false);
-  const isMobile = window.innerWidth < 500;
-  const { language } = useContext(AppContext);
+  const { isMobile, language } = useContext(AppContext);
 
   return (
     <div className={"details-container" + (isMobile ? " mobile" : "")}>

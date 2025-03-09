@@ -9,7 +9,6 @@
   font-size: 28px;
 }
 
-.schedule-content-text-mobile {
-  font-family: "Charm", Arial, serif;
+.schedule-content-text.mobile {
   font-size: 20px;
 }
