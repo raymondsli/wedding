@@ -1,5 +1,11 @@
 export const getText = (text, language) => {
-  return translations[text][language] ?? (language === "English" ? text : "");
+  if (
+    translations.hasOwnProperty(text) &&
+    translations[text].hasOwnProperty(language)
+  ) {
+    return translations[text][language];
+  }
+  return language === "English" ? text : "";
 };
 
 const translations = {
