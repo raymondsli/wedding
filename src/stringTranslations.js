@@ -91,7 +91,7 @@ const translations = {
   },
   "Will you be attending the dinner?": {
     English: "Will you be attending the dinner?",
-    Chinese: "選擇選項",
+    Chinese: "您會參加晚宴嗎？",
   },
   "Wild Mushroom Ravioli (vegetarian)": {
     English: "Wild Mushroom Ravioli (vegetarian)",
