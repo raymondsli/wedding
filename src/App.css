@@ -50,3 +50,7 @@
     text-decoration: underline;
   }
 }
+
+.map-link.mobile {
+  text-decoration: underline;
+}

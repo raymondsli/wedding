@@ -18,7 +18,7 @@ function Schedule(props) {
           5:15pm: {getText("Arrive at Pines Park", language)} (
           {getText("Address", language)}:{" "}
           <a
-            className="map-link"
+            className={"map-link" + (isMobile ? " mobile" : "")}
             target="_blank"
             rel="noreferrer"
             href="https://maps.app.goo.gl/gHsdY3z7cV5ySg7m7"
@@ -38,7 +38,7 @@ function Schedule(props) {
           {getText("Arrive at Whitestone Restaurant & Bar", language)} (
           {getText("Address", language)}:{" "}
           <a
-            className="map-link"
+            className={"map-link" + (isMobile ? " mobile" : "")}
             target="_blank"
             rel="noreferrer"
             href="https://maps.app.goo.gl/vghhqZPiD1JMBuDq8"

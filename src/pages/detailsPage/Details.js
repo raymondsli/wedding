@@ -42,7 +42,7 @@ function Details() {
           }
         >
           <a
-            className="map-link"
+            className={"map-link" + (isMobile ? " mobile" : "")}
             target="_blank"
             rel="noreferrer"
             href="https://maps.app.goo.gl/gHsdY3z7cV5ySg7m7"
