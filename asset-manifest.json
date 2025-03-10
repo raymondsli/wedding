@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f37599a3.css",
-    "main.js": "/static/js/main.8df53f40.js",
+    "main.css": "/static/css/main.98ed5e76.css",
+    "main.js": "/static/js/main.170b731e.js",
     "static/media/couple-photo.jpg": "/static/media/couple-photo.ecb6b39220337884f128.jpg",
     "static/media/Caveat.ttf": "/static/media/Caveat.31f0a02d84d42627c894.ttf",
-    "static/media/background-6.jpg": "/static/media/background-6.f31d7f3d706fdfcbdda1.jpg",
+    "static/media/background-11.jpg": "/static/media/background-11.cbc67dc3a8c077fbb8d8.jpg",
     "static/media/PTSerif-Regular.ttf": "/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
+    "static/media/dinner-menu-chinese.png": "/static/media/dinner-menu-chinese.aa71fc9fafbdd08b0faf.png",
     "static/media/dinner-menu.jpg": "/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
     "static/media/Charm-Regular.ttf": "/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
     "static/media/AmsterdamOne.ttf": "/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
     "index.html": "/index.html",
-    "main.f37599a3.css.map": "/static/css/main.f37599a3.css.map",
-    "main.8df53f40.js.map": "/static/js/main.8df53f40.js.map"
+    "main.98ed5e76.css.map": "/static/css/main.98ed5e76.css.map",
+    "main.170b731e.js.map": "/static/js/main.170b731e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f37599a3.css",
-    "static/js/main.8df53f40.js"
+    "static/css/main.98ed5e76.css",
+    "static/js/main.170b731e.js"
   ]
 }
