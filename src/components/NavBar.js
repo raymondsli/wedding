@@ -28,7 +28,11 @@ function NavBar(props) {
           className={"language-toggle" + (isMobile ? " mobile" : "")}
           onClick={toggleLanguage}
         >
-          {language === "English" ? "中文版" : "English Version"}
+          {language === "English"
+            ? "中文版"
+            : isMobile
+            ? "Switch to English Version"
+            : "English Version"}
         </button>
       )}
       <div className={"nav-scroll-container" + (isMobile ? " mobile" : "")}>

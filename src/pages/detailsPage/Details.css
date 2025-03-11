@@ -21,6 +21,10 @@
   z-index: -1;
 }
 
+.background-image.mobile {
+  background-image: url("~/src/images/background-8.jpg");
+}
+
 .couple-image {
   background-image: url("~/src/images/couple-photo.jpg");
   opacity: 1;

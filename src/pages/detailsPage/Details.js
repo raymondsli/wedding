@@ -15,7 +15,7 @@ function Details() {
 
   return (
     <div className={"details-container" + (isMobile ? " mobile" : "")}>
-      <div className="background-image" />
+      <div className={"background-image" + (isMobile ? " mobile" : "")} />
       <div></div>
       <div className="couple-image" />
       {isMobile ? (

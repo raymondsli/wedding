@@ -29,7 +29,8 @@ function CheckRSVPModal(props) {
       return (
         <>
           <div style={{ marginBottom: "5px" }}>
-            {getText("No RSVP status found for", language)} {name}!
+            {getText("No RSVP status found for", language)} {name}{" "}
+            {getText("!", language)}
           </div>{" "}
           <div style={{ marginBottom: "5px", textAlign: "center" }}>
             {getText(

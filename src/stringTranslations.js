@@ -11,7 +11,7 @@ export const getText = (text, language) => {
 const translations = {
   Schedule: {
     English: "Schedule",
-    Chinese: "行程安排",
+    Chinese: "流程安排",
   },
   "Dinner Menu": {
     English: "Dinner Menu",
@@ -23,7 +23,7 @@ const translations = {
   },
   FAQ: {
     English: "FAQ",
-    Chinese: "常見問題",
+    Chinese: "賓客須知",
   },
   "Yi-Nung": {
     English: "Yi-Nung",
@@ -55,7 +55,7 @@ const translations = {
   },
   RSVP: {
     English: "RSVP",
-    Chinese: "敬請回覆",
+    Chinese: "是否參加",
   },
   "Check RSVP Status": {
     English: "Check RSVP Status",
@@ -71,7 +71,7 @@ const translations = {
   },
   "Will you be attending the ceremony?": {
     English: "Will you be attending the ceremony?",
-    Chinese: "您會參加典禮嗎？",
+    Chinese: "您會參加婚禮儀式嗎？",
   },
   "Choose your main course": {
     English: "Choose your main course",
@@ -111,11 +111,11 @@ const translations = {
   },
   "Jidori Roasted Chicken": {
     English: "Jidori Roasted Chicken",
-    Chinese: "地雞烤雞",
+    Chinese: "日式炭烤走地雞",
   },
   "Additional private message to the hosts (optional)": {
     English: "Additional private message to the hosts (optional)",
-    Chinese: "給主辦人的額外私人留言（可選)",
+    Chinese: "有任何想對我們說的話嗎？（選填）",
   },
   "Enter your message": {
     English: "Enter your message",
@@ -139,11 +139,11 @@ const translations = {
   },
   "Ceremony and dinner attendance are missing": {
     English: "Ceremony and dinner attendance are missing",
-    Chinese: "典禮和晚宴出席狀態缺失",
+    Chinese: "儀式和晚宴出席狀態缺失",
   },
   "Ceremony attendance is missing": {
     English: "Ceremony attendance is missing",
-    Chinese: "典禮出席狀態缺失",
+    Chinese: "儀式出席狀態缺失",
   },
   "Dinner attendance is missing": {
     English: "Dinner attendance is missing",
@@ -168,7 +168,7 @@ const translations = {
   },
   "We'll see you at the ceremony and dinner!": {
     English: "We'll see you at the ceremony and dinner!",
-    Chinese: "我們典禮和晚宴見！",
+    Chinese: "我們儀式和晚宴見！",
   },
   "Thank you!": {
     English: "Thank you!",
@@ -176,7 +176,7 @@ const translations = {
   },
   "We'll see you at the ceremony!": {
     English: "We'll see you at the ceremony!",
-    Chinese: "我們典禮見！",
+    Chinese: "我們儀式見！",
   },
   "We'll see you at the dinner!": {
     English: "We'll see you at the dinner!",
@@ -188,7 +188,7 @@ const translations = {
   },
   "Guess we'll have to see you some other time then!": {
     English: "Guess we'll have to see you some other time then!",
-    Chinese: "看來我們只能下次再見了！",
+    Chinese: "我們改天再見！",
   },
   "Check your RSVP status and main course selection.": {
     English: "Check your RSVP status and main course selection.",
@@ -210,14 +210,18 @@ const translations = {
     English: "No RSVP status found for",
     Chinese: "未找到回覆狀態",
   },
+  "!": {
+    English: "!",
+    Chinese: "！",
+  },
   "Please note RSVP status submissions may take a few hours to be reflected.": {
     English:
       "Please note RSVP status submissions may take a few hours to be reflected.",
-    Chinese: "請注意，回覆狀態的提交可能需要數小時才會顯示。",
+    Chinese: "請注意，提交後回覆狀態可能需要數小時才會顯示。",
   },
   "Attending Ceremony": {
     English: "Attending Ceremony",
-    Chinese: "參加典禮",
+    Chinese: "參加儀式",
   },
   "Attending Dinner": {
     English: "Attending Dinner",
@@ -237,7 +241,7 @@ const translations = {
   },
   "Wedding Ceremony": {
     English: "Wedding Ceremony",
-    Chinese: "婚禮典禮",
+    Chinese: "婚禮儀式",
   },
   "Photos with Guests": {
     English: "Photos with Guests",
@@ -251,9 +255,9 @@ const translations = {
     English: "Dinner and Drinks",
     Chinese: "晚宴與飲品",
   },
-  "Wedding Cake": {
-    English: "Wedding Cake",
-    Chinese: "婚禮蛋糕",
+  "Cake cutting": {
+    English: "Cake cutting",
+    Chinese: "切蛋糕儀式",
   },
   "Go Home": {
     English: "Go Home",
