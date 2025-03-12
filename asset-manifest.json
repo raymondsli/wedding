@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.49b0d4f1.css",
-    "main.js": "/static/js/main.0c2568d9.js",
-    "static/media/couple-photo.jpg": "/static/media/couple-photo.ecb6b39220337884f128.jpg",
+    "main.css": "/static/css/main.552fc4be.css",
+    "main.js": "/static/js/main.3f1f8f7a.js",
+    "static/media/cjk.ttf": "/static/media/cjk.f3117d64fd6953d0a254.ttf",
+    "static/media/GenSenRounded2TW-R.otf": "/static/media/GenSenRounded2TW-R.dfa30895dd6377df4cb9.otf",
+    "static/media/Yozai-Regular.ttf": "/static/media/Yozai-Regular.0a220af04a6d03856b4e.ttf",
+    "static/media/LXGWWenKaiTC-Regular.ttf": "/static/media/LXGWWenKaiTC-Regular.1238602b0cdcd33d81e4.ttf",
+    "static/media/ChenYuluoyan-2.0-Thin.ttf": "/static/media/ChenYuluoyan-2.0-Thin.4fbf96b1873bf6490e2f.ttf",
+    "static/media/couple-photo-3.png": "/static/media/couple-photo-3.2c9863d85386fb2d40d8.png",
+    "static/media/background-15.jpg": "/static/media/background-15.fa3b0093896d8e8f9347.jpg",
     "static/media/Caveat.ttf": "/static/media/Caveat.31f0a02d84d42627c894.ttf",
-    "static/media/background-11.jpg": "/static/media/background-11.cbc67dc3a8c077fbb8d8.jpg",
+    "static/media/dinner-menu-chinese.jpg": "/static/media/dinner-menu-chinese.652623cb015c186c610c.jpg",
+    "static/media/background-8.jpg": "/static/media/background-8.f874a55035501a843d89.jpg",
     "static/media/PTSerif-Regular.ttf": "/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
-    "static/media/dinner-menu-chinese.png": "/static/media/dinner-menu-chinese.aa71fc9fafbdd08b0faf.png",
     "static/media/dinner-menu.jpg": "/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
     "static/media/Charm-Regular.ttf": "/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
     "static/media/AmsterdamOne.ttf": "/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
     "index.html": "/index.html",
-    "main.49b0d4f1.css.map": "/static/css/main.49b0d4f1.css.map",
-    "main.0c2568d9.js.map": "/static/js/main.0c2568d9.js.map"
+    "main.552fc4be.css.map": "/static/css/main.552fc4be.css.map",
+    "main.3f1f8f7a.js.map": "/static/js/main.3f1f8f7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.49b0d4f1.css",
-    "static/js/main.0c2568d9.js"
+    "static/css/main.552fc4be.css",
+    "static/js/main.3f1f8f7a.js"
   ]
 }
