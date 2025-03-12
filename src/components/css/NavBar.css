@@ -34,7 +34,7 @@
   background-color: transparent;
   color: black;
   cursor: pointer;
-  font-family: cursive;
+  font-family: cursive, "LXGWWenKaiTC";
   font-size: 20px;
   align-self: flex-start;
   flex: 1;
@@ -52,7 +52,7 @@
   background-color: transparent;
   color: darkblue;
   cursor: pointer;
-  font-family: cursive;
+  font-family: cursive, "LXGWWenKaiTC";
   font-size: 20px;
 }
 

@@ -24,11 +24,36 @@
   src: url("~/src/fonts/Caveat.ttf");
 }
 
+@font-face {
+  font-family: "LXGWWenKaiTC";
+  src: url("~/src/fonts/LXGWWenKaiTC-Regular.ttf");
+}
+
+@font-face {
+  font-family: "GenSenRounded";
+  src: url("~/src/fonts/GenSenRounded2TW-R.otf");
+}
+
+@font-face {
+  font-family: "ChenYuluoyan";
+  src: url("~/src/fonts/ChenYuluoyan-2.0-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Yozai";
+  src: url("~/src/fonts/Yozai-Regular.ttf");
+}
+
+@font-face {
+  font-family: "cjk";
+  src: url("~/src/fonts/cjk.ttf");
+}
+
 .subsection-header {
   padding-top: 50px;
   text-align: center;
   font-size: 65px;
-  font-family: "Amsterdam", Arial, serif;
+  font-family: "Amsterdam", "LXGWWenKaiTC", Arial, serif;
   color: #646464;
   margin-left: auto;
   margin-right: auto;

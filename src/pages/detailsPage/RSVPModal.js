@@ -234,6 +234,11 @@ function RSVPModal(props) {
               "&:hover": {
                 border: "solid 1px black !important",
               },
+              fontFamily: "Caveat, 'LXGWWenKaiTC'",
+            }),
+            option: (baseStyles) => ({
+              ...baseStyles,
+              fontFamily: "Caveat, 'LXGWWenKaiTC'",
             }),
             dropdownIndicator: (baseStyles) => ({
               ...baseStyles,
@@ -260,6 +265,11 @@ function RSVPModal(props) {
               "&:hover": {
                 border: "solid 1px black !important",
               },
+              fontFamily: "Caveat, 'LXGWWenKaiTC'",
+            }),
+            option: (baseStyles) => ({
+              ...baseStyles,
+              fontFamily: "Caveat, 'LXGWWenKaiTC'",
             }),
             dropdownIndicator: (baseStyles) => ({
               ...baseStyles,
@@ -287,6 +297,11 @@ function RSVPModal(props) {
                 "&:hover": {
                   border: "solid 1px black !important",
                 },
+                fontFamily: "Caveat, 'LXGWWenKaiTC'",
+              }),
+              option: (baseStyles) => ({
+                ...baseStyles,
+                fontFamily: "Caveat, 'LXGWWenKaiTC'",
               }),
               dropdownIndicator: (baseStyles, state) => ({
                 ...baseStyles,

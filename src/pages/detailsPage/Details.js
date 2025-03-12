@@ -63,7 +63,7 @@ function Details() {
             ]}
             labelStyle={{
               color: "rgb(13, 75, 133)",
-              fontFamily: "Charm, Arial, serif",
+              fontFamily: "Charm, 'LXGWWenKaiTC', Arial, serif",
             }}
             digitBlockStyle={{
               backgroundColor: "rgb(13, 75, 133)",

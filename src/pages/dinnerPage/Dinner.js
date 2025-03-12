@@ -10,11 +10,18 @@ function Dinner(props) {
 
   return (
     <div className="dinner-page" ref={props.ref}>
-      <h1 className={"subsection-header" + (isMobile ? " mobile" : "")}>
-        {isMobile
-          ? getText("Dinner", language)
-          : getText("Dinner Menu", language)}
-      </h1>
+      <a
+        style={{ textDecoration: "none" }}
+        target="_blank"
+        rel="noreferrer"
+        href="https://whitestonerestaurant.com/dana-point-lantern-district-whitestone-restaurant-and-bar-food-menu"
+      >
+        <h1 className={"subsection-header" + (isMobile ? " mobile" : "")}>
+          {isMobile
+            ? getText("Dinner", language)
+            : getText("Dinner Menu", language)}
+        </h1>
+      </a>
       <div
         className={
           "dinner-menu-image" +

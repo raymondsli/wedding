@@ -27,11 +27,11 @@ const translations = {
   },
   "Yi-Nung": {
     English: "Yi-Nung",
-    Chinese: "黃以儂",
+    Chinese: "以儂",
   },
   Raymond: {
     English: "Raymond",
-    Chinese: "李善牛",
+    Chinese: "善牛",
   },
   "6th September 2025 at Pines Park": {
     English: "6th September 2025 at Pines Park",
@@ -55,7 +55,7 @@ const translations = {
   },
   RSVP: {
     English: "RSVP",
-    Chinese: "是否參加",
+    Chinese: "出席回覆",
   },
   "Check RSVP Status": {
     English: "Check RSVP Status",
@@ -79,7 +79,7 @@ const translations = {
   },
   "Select option": {
     English: "Select option",
-    Chinese: "選擇選項",
+    Chinese: "請選擇",
   },
   Yes: {
     English: "Yes",
@@ -111,7 +111,7 @@ const translations = {
   },
   "Jidori Roasted Chicken": {
     English: "Jidori Roasted Chicken",
-    Chinese: "日式炭烤走地雞",
+    Chinese: "炭烤走地雞",
   },
   "Additional private message to the hosts (optional)": {
     English: "Additional private message to the hosts (optional)",
@@ -131,27 +131,27 @@ const translations = {
   },
   "First name is missing": {
     English: "First name is missing",
-    Chinese: "名字缺失",
+    Chinese: "名字為必填欄位",
   },
   "Last name is missing": {
     English: "Last name is missing",
-    Chinese: "姓氏缺失",
+    Chinese: "姓氏為必填欄位",
   },
   "Ceremony and dinner attendance are missing": {
     English: "Ceremony and dinner attendance are missing",
-    Chinese: "儀式和晚宴出席狀態缺失",
+    Chinese: "請選擇是否出席儀式和晚宴",
   },
   "Ceremony attendance is missing": {
     English: "Ceremony attendance is missing",
-    Chinese: "儀式出席狀態缺失",
+    Chinese: "請選擇是否出席儀式",
   },
   "Dinner attendance is missing": {
     English: "Dinner attendance is missing",
-    Chinese: "晚宴出席狀態缺失",
+    Chinese: "請選擇是否出席晚宴",
   },
   "Main course selection is missing": {
     English: "Main course selection is missing",
-    Chinese: "主菜選擇缺失",
+    Chinese: "請選擇您的主菜",
   },
   "Something went wrong with the submission.": {
     English: "Something went wrong with the submission.",
@@ -204,7 +204,7 @@ const translations = {
   },
   "Name is missing": {
     English: "Name is missing",
-    Chinese: "姓名缺失",
+    Chinese: "請填寫姓名",
   },
   "No RSVP status found for": {
     English: "No RSVP status found for",
@@ -265,6 +265,6 @@ const translations = {
   },
   "Source Code": {
     English: "Source Code",
-    Chinese: "源代碼",
+    Chinese: "檢視程式碼",
   },
 };

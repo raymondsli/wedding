@@ -33,7 +33,7 @@ function InfoModal(props) {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          fontFamily: "Caveat",
+          fontFamily: "Caveat, 'LXGWWenKaiTC'",
           fontSize: "20px",
         }}
       >

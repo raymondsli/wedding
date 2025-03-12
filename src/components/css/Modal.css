@@ -1,12 +1,12 @@
 .modal-title-text {
-  font-family: "PTSerif";
+  font-family: "Caveat", "LXGWWenKaiTC";
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .modal-description {
-  font-family: "PTSerif";
-  font-size: 12px;
+  font-family: "Caveat", "LXGWWenKaiTC";
+  font-size: 17px;
   margin-bottom: 15px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .form-text {
-  font-family: "Caveat";
+  font-family: "Caveat", "LXGWWenKaiTC";
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -27,7 +27,7 @@
 .form-input {
   outline: none;
   font-size: 16px;
-  font-family: "Times";
+  font-family: "Caveat", "LXGWWenKaiTC";
   padding: 5px 5px 5px 10px;
   border-radius: 4px;
   border: solid 1px black;
@@ -38,7 +38,7 @@
 .form-text-area {
   outline: none;
   font-size: 16px;
-  font-family: "Times";
+  font-family: "Caveat", "LXGWWenKaiTC";
   padding: 10px 5px 5px 10px;
   border-radius: 4px;
   border: solid 1px black;
@@ -68,7 +68,7 @@
   padding: 10px;
   background: #fff;
   font-size: 16px;
-  font-family: "PTSerif", "Sans", "Condensed";
+  font-family: "Caveat", "LXGWWenKaiTC", "Sans", "Condensed";
   font-weight: 600;
   cursor: pointer;
   border: solid 1px gray;
