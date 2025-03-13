@@ -38,6 +38,7 @@
 }
 
 .name-header {
+  margin-top: 20px;
   text-align: center;
   font-size: 40px;
   font-family: "Amsterdam", "Yozai", Arial, serif;
@@ -45,6 +46,7 @@
 }
 
 .name-header.mobile {
+  margin-top: 0px;
   line-height: 100px;
   padding-bottom: 20px;
 }
