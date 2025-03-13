@@ -29,7 +29,7 @@
 
 .language-toggle {
   padding: 10px;
-  margin: 5px;
+  margin: 5px auto 5px 5px;
   border: none;
   background-color: transparent;
   color: black;
@@ -37,12 +37,12 @@
   font-family: cursive, "LXGWWenKaiTC";
   font-size: 20px;
   align-self: flex-start;
-  flex: 1;
   text-align: left;
 }
 
 .language-toggle.mobile {
   align-self: center;
+  margin: 5px;
 }
 
 .nav-item {
