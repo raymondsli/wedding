@@ -244,6 +244,10 @@ function RSVPModal(props) {
               ...baseStyles,
               color: "black",
             }),
+            menuPortal: (baseStyles) => ({
+              ...baseStyles,
+              zIndex: "3",
+            }),
           }}
           placeholder={getText("Select option", language)}
           value={attendingCermony}
@@ -274,6 +278,10 @@ function RSVPModal(props) {
             dropdownIndicator: (baseStyles) => ({
               ...baseStyles,
               color: "black",
+            }),
+            menuPortal: (baseStyles) => ({
+              ...baseStyles,
+              zIndex: "3",
             }),
           }}
           placeholder={getText("Select option", language)}
@@ -306,6 +314,10 @@ function RSVPModal(props) {
               dropdownIndicator: (baseStyles, state) => ({
                 ...baseStyles,
                 color: "black",
+              }),
+              menuPortal: (baseStyles) => ({
+                ...baseStyles,
+                zIndex: "3",
               }),
             }}
             placeholder={getText("Select option", language)}
