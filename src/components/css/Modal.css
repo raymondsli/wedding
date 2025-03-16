@@ -1,3 +1,7 @@
+.ReactModal__Overlay {
+  z-index: 999;
+}
+
 .modal-title-text {
   font-family: "Caveat", "LXGWWenKaiTC";
   font-size: 20px;

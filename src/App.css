@@ -79,3 +79,7 @@
 .map-link.mobile {
   text-decoration: underline;
 }
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
