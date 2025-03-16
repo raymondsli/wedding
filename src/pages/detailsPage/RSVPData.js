@@ -3,4 +3,5 @@ export const rsvpData = {
   "yi-nung huang": ["Yes", "Yes", "Chilean Sea Bass"],
   "linda li": ["Yes", "Yes", "Wild Mushroom Ravioli"],
   "jakub woyke": ["Yes", "Yes", "Chilean Sea Bass"],
+  "wanjing xu": ["Yes", "Yes", "Chilean Sea Bass"],
 };
