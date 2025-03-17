@@ -8,6 +8,7 @@
 }
 
 .dinner-menu-image.chinese {
+  margin-left: 25px;
   background-image: url("~/src/images/dinner-menu-chinese.jpg");
 }
 
