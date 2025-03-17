@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a15f3481.css",
+    "main.css": "/static/css/main.dddfba0d.css",
     "main.js": "/static/js/main.8bab8435.js",
     "static/media/cjk.ttf": "/static/media/cjk.f3117d64fd6953d0a254.ttf",
     "static/media/GenSenRounded2TW-R.otf": "/static/media/GenSenRounded2TW-R.dfa30895dd6377df4cb9.otf",
@@ -10,18 +10,18 @@
     "static/media/couple-photo-3.png": "/static/media/couple-photo-3.2c9863d85386fb2d40d8.png",
     "static/media/background-15.jpg": "/static/media/background-15.fa3b0093896d8e8f9347.jpg",
     "static/media/Caveat.ttf": "/static/media/Caveat.31f0a02d84d42627c894.ttf",
-    "static/media/dinner-menu-chinese.jpg": "/static/media/dinner-menu-chinese.652623cb015c186c610c.jpg",
     "static/media/background-8.jpg": "/static/media/background-8.f874a55035501a843d89.jpg",
+    "static/media/dinner-menu-chinese.jpg": "/static/media/dinner-menu-chinese.45ce36b4fadd4ee6222b.jpg",
     "static/media/PTSerif-Regular.ttf": "/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
     "static/media/dinner-menu.jpg": "/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
     "static/media/Charm-Regular.ttf": "/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
     "static/media/AmsterdamOne.ttf": "/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
     "index.html": "/index.html",
-    "main.a15f3481.css.map": "/static/css/main.a15f3481.css.map",
+    "main.dddfba0d.css.map": "/static/css/main.dddfba0d.css.map",
     "main.8bab8435.js.map": "/static/js/main.8bab8435.js.map"
   },
   "entrypoints": [
-    "static/css/main.a15f3481.css",
+    "static/css/main.dddfba0d.css",
     "static/js/main.8bab8435.js"
   ]
 }
