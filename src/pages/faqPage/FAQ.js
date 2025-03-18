@@ -7,7 +7,7 @@ import { getText } from "../../stringTranslations";
 
 const questionAndAnswers = {
   "When do I need to RSVP by?":
-    "Please RSVP by April 15th at the latest. If you are unsure or need more time, please reach out directly to us.",
+    "Please RSVP by April 22nd at the latest. If you are unsure or need more time, please reach out directly to us.",
   "What is the dress code?":
     "The dress code will be formal attire, meaning a suit for men and a dress for women. No sandals, slippers, or jeans. For colors, preferably light blue or yellow (to match the wedding's main color scheme), but other colors (black, dark blue, gray, etc) are fine as well.",
   "Can I bring a plus one?":
@@ -36,7 +36,7 @@ const questionAndAnswers = {
 
 const questionAndAnswersChinese = {
   "我需要何時回覆是否出席 (RSVP)?":
-    "請最晚在 4 月 15 日前回覆。如果您不確定或需要更多時間，請直接聯繫我們。",
+    "請最晚在 4 月 22 日前回覆。如果您不確定或需要更多時間，請直接聯繫我們。",
   "有著裝要求嗎？":
     "著裝要求為正式服裝，男士請穿西裝，女士請穿洋裝。禁止穿涼鞋、拖鞋或牛仔褲。顏色方面，建議淺藍色或黃色（與婚禮主色調相配），但其他顏色（黑色、深藍色、灰色等）也可以。",
   "我可以帶一位同行賓客嗎？":
