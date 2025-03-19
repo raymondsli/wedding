@@ -15,7 +15,7 @@ function Schedule(props) {
       </h1>
       <div className="schedule-content-container">
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
-          5:15pm: {getText("Arrive at Pines Park", language)} (
+          5:00pm-5:15pm: {getText("Arrive at Pines Park", language)} (
           {getText("Address", language)}:{" "}
           <a
             className={"map-link" + (isMobile ? " mobile" : "")}

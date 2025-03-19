@@ -11,7 +11,7 @@ const questionAndAnswers = {
   "What is the dress code?":
     "The dress code will be formal attire, meaning a suit for men and a dress for women. No sandals, slippers, or jeans. For colors, preferably light blue or yellow (to match the wedding's main color scheme), but other colors (black, dark blue, gray, etc) are fine as well.",
   "Can I bring a plus one?":
-    "Due to venue and seating limitations, we ask that you only RSVP for yourself unless we have explictly told you otherwise. If you are unsure, feel free to ask us.",
+    "Yes, you may bring a plus one. If you are bringing a plus one, please remember to submit an RSVP for your plus one by April 22nd as well.",
   "Where are my lodging options?":
     "If you are traveling in, there are several hotel options near the venue. Personally, we will be staying at the Laguna Cliffs Marriott Resort & Spa.",
   "Will the venue be outdoors or indoors?":
@@ -40,7 +40,7 @@ const questionAndAnswersChinese = {
   "有著裝要求嗎？":
     "著裝要求為正式服裝，男士請穿西裝，女士請穿洋裝。禁止穿涼鞋、拖鞋或牛仔褲。顏色方面，建議淺藍色或黃色（與婚禮主色調相配），但其他顏色（黑色、深藍色、灰色等）也可以。",
   "我可以帶一位同行賓客嗎？":
-    "由於場地和座位限制，請您僅為自己回覆 (RSVP)，除非我們另行通知您可以攜伴參加。如果您不確定，隨時可以向我們詢問。",
+    "可以，您可以帶一位同行賓客。若您要帶同行賓客，請記得也在 4 月 22 日前為您的賓客提交回覆邀請 (RSVP)。",
   "有哪些住宿選擇？":
     "如果您需要住宿，場地附近有幾家飯店可供選擇。我們則會入住 Laguna Cliffs Marriott Resort & Spa。",
   "場地是室內還是室外？":
