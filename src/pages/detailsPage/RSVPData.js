@@ -4,4 +4,12 @@ export const rsvpData = {
   "linda li": ["Yes", "Yes", "Wild Mushroom Ravioli"],
   "jakub woyke": ["Yes", "Yes", "Chilean Sea Bass"],
   "wanjing xu": ["Yes", "Yes", "Chilean Sea Bass"],
+  "fayu li": ["Yes", "Yes", "Jidori Roasted Chicken"],
+  "yoonhee choi": ["Yes", "Yes", "10oz Filet Mignon"],
+  "yusuke kikuchi": ["Yes", "Yes", "10oz Filet Mignon"],
+  "wei li": ["No", "No", "N/A"],
+  "shuya zhan": ["Yes", "Yes", "10oz Filet Mignon"],
+  "haoran zhang": ["Yes", "Yes", "Chilean Sea Bass"],
+  "anthony liu": ["Yes", "Yes", "Chilean Sea Bass"],
+  "mahal miles": ["Yes", "Yes", "Chilean Sea Bass"],
 };
