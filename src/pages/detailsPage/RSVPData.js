@@ -13,4 +13,6 @@ export const rsvpData = {
   "anthony liu": ["Yes", "Yes", "Chilean Sea Bass"],
   "mahal miles": ["Yes", "Yes", "Chilean Sea Bass"],
   "ye eun hong": ["Yes", "Yes", "10oz Filet Mignon"],
+  "kenny ashley": ["Yes", "Yes", "Chilean Sea Bass"],
+  "alyssa ashley": ["Yes", "Yes", "10oz Filet Mignon"],
 };
