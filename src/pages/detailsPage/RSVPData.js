@@ -31,4 +31,6 @@ export const rsvpData = {
   "melody chao": ["Yes", "Yes", "10oz Filet Mignon"],
   "eric wang": ["Yes", "Yes", "Chilean Sea Bass"],
   黃思嘉: ["是", "是", "10 盎司菲力牛排"],
+  "weichen lin": ["是", "是", "智利鱸魚"],
+  徐万盾: ["是", "是", "智利鱸魚"],
 };
