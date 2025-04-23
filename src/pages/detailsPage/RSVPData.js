@@ -33,4 +33,10 @@ export const rsvpData = {
   黃思嘉: ["是", "是", "10 盎司菲力牛排"],
   "weichen lin": ["是", "是", "智利鱸魚"],
   徐万盾: ["是", "是", "智利鱸魚"],
+  "alec deng": ["Yes", "Yes", "Chilean Sea Bass"],
+  "ryan shim": ["Yes", "Yes", "10oz Filet Mignon"],
+  "crystal nguyen": ["Yes", "Yes", "Wild Mushroom Ravioli"],
+  "sung joon baek": ["Yes", "Yes", "10oz Filet Mignon"],
+  "ha nguyen": ["Yes", "Yes", "Wild Mushroom Ravioli"],
+  "wesley woo": ["Yes", "Yes", "Chilean Sea Bass"],
 };
