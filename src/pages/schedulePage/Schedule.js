@@ -51,7 +51,7 @@ function Schedule(props) {
           7:15pm-8:30pm: {getText("Dinner and Drinks", language)}
         </div>
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
-          8:30pm: {getText("Cake cutting", language)}
+          8:30pm: {getText("Cake Cutting", language)}
         </div>
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
           9:00pm-10:00pm: {getText("Go Home", language)}

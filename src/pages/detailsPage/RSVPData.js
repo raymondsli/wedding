@@ -39,4 +39,6 @@ export const rsvpData = {
   "sung joon baek": ["Yes", "Yes", "10oz Filet Mignon"],
   "ha nguyen": ["Yes", "Yes", "Wild Mushroom Ravioli"],
   "wesley woo": ["Yes", "Yes", "Chilean Sea Bass"],
+  "chloe lee": ["Yes", "Yes", "Chilean Sea Bass"],
+  "hank lee": ["Yes", "Yes", "10oz Filet Mignon"],
 };
