@@ -255,8 +255,8 @@ const translations = {
     English: "Dinner and Drinks",
     Chinese: "晚宴與飲品",
   },
-  "Cake cutting": {
-    English: "Cake cutting",
+  "Cake Cutting": {
+    English: "Cake Cutting",
     Chinese: "切蛋糕儀式",
   },
   "Go Home": {
