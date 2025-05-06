@@ -63,6 +63,9 @@ const questionAndAnswersChinese = {
     "我們非常感謝您的心意，但我們不接受禮物，也沒有禮物願望清單。",
 };
 
+/*
+ * Component for FAQ and answers.
+ */
 function FAQ(props) {
   const { isMobile, language } = useContext(AppContext);
 

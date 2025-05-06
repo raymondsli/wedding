@@ -7,6 +7,9 @@ import emailjs from "@emailjs/browser";
 
 import { getText } from "../../stringTranslations";
 
+/*
+ * Form modal to allow users to RSVP and select a dinner option.
+ */
 function RSVPModal(props) {
   const { closeModal } = props;
   const [isConfirmationClicked, setIsConfirmationClicked] = useState(false);

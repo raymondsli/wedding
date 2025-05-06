@@ -5,6 +5,9 @@ import AppContext from "../AppContext";
 
 import { getText } from "../stringTranslations";
 
+/*
+ * Top navbar component containing language toggle and quick scroll buttons.
+ */
 function NavBar(props) {
   const { scheduleRef, dinnerRef, faqRef } = props;
   const { isMobile, language, setLanguage } = useContext(AppContext);

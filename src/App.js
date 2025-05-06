@@ -10,6 +10,9 @@ import Dinner from "./pages/dinnerPage/Dinner.js";
 import FAQ from "./pages/faqPage/FAQ.js";
 import SourceCodeButton from "./components/SourceCodeButton";
 
+/*
+ * Base root component.
+ */
 function App() {
   const [language, setLanguage] = useState("English");
   const isMobile = window.innerWidth < 500;

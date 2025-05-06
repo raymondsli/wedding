@@ -5,6 +5,9 @@ import AppContext from "../../AppContext";
 
 import { getText } from "../../stringTranslations";
 
+/*
+ * Component for showing wedding schedule.
+ */
 function Schedule(props) {
   const { isMobile, language } = useContext(AppContext);
 

@@ -5,6 +5,9 @@ import AppContext from "../../AppContext";
 
 import { getText } from "../../stringTranslations";
 
+/*
+ * Component containing dinner menu image.
+ */
 function Dinner(props) {
   const { isMobile, language } = useContext(AppContext);
 

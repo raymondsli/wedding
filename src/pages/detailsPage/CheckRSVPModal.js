@@ -6,6 +6,9 @@ import FormModal from "../../components/FormModal";
 import { rsvpData } from "./RSVPData";
 import { getText } from "../../stringTranslations";
 
+/*
+ * Modal to show RSVP status and dinner selection.
+ */
 function CheckRSVPModal(props) {
   const { closeModal } = props;
   const [name, setName] = useState("");

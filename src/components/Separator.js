@@ -1,3 +1,6 @@
+/*
+ * Component for separating sections within the page.
+ */
 function Separator() {
   return (
     <div

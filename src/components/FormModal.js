@@ -20,6 +20,9 @@ const customStyles = {
   },
 };
 
+/*
+ * Base modal for user inputted form data.
+ */
 function FormModal(props) {
   const { onClose, onSubmit, submitTooltip, isSubmitDisabled, isSubmitActive } =
     props;

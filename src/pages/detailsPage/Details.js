@@ -8,6 +8,9 @@ import CheckRSVPModal from "./CheckRSVPModal";
 
 import { getText } from "../../stringTranslations";
 
+/*
+ * Top component containing wedding details and rsvp options.
+ */
 function Details() {
   const [showRSVPModal, setShowRSVPModal] = useState(false);
   const [showCheckRSVPModal, setShowCheckRSVPModal] = useState(false);

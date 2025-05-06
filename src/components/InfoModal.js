@@ -15,6 +15,9 @@ const customStyles = {
   },
 };
 
+/*
+ * Base modal for displaying info (no form input).
+ */
 function InfoModal(props) {
   const { onClose, children } = props;
 
