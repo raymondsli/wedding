@@ -4,6 +4,9 @@ import AppContext from "../AppContext";
 
 import { getText } from "../stringTranslations";
 
+/*
+ * Component for button to link to Github source code.
+ */
 function SourceCodeButton() {
   const { language } = useContext(AppContext);
   return (
