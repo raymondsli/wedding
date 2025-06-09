@@ -44,4 +44,5 @@ export const rsvpData = {
   "christine wu": ["Yes", "Yes", "Chilean Sea Bass"],
   "michelle chang": ["Yes", "Yes", "10oz Filet Mignon"],
   "ethan chang": ["Yes", "Yes", "Chilean Sea Bass"],
+  "ej huang": ["Yes", "Yes", "10oz Filet Mignon"],
 };
