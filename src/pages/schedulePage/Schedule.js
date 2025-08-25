@@ -18,7 +18,7 @@ function Schedule(props) {
       </h1>
       <div className="schedule-content-container">
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
-          5:00pm-5:15pm: {getText("Arrive at Pines Park", language)} (
+          5:00pm: {getText("Arrive at Pines Park", language)} (
           {getText("Address", language)}:{" "}
           <a
             className={"map-link" + (isMobile ? " mobile" : "")}
@@ -31,13 +31,13 @@ function Schedule(props) {
           )
         </div>
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
-          5:30pm-5:45pm: {getText("Wedding Ceremony", language)}
+          5:30pm-6:00pm: {getText("Wedding Ceremony", language)}
         </div>
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
-          5:45pm-6:30pm: {getText("Photos with Guests", language)}
+          6:00pm-6:20pm: {getText("Photos with Guests", language)}
         </div>
         <div className={"schedule-content-text" + (isMobile ? " mobile" : "")}>
-          6:30pm-7:15pm:{" "}
+          6:20pm-7:15pm:{" "}
           {getText("Arrive at Whitestone Restaurant & Bar", language)} (
           {getText("Address", language)}:{" "}
           <a

@@ -12,7 +12,7 @@ export const rsvpData = {
   "haoran zhang": ["Yes", "Yes", "Chilean Sea Bass"],
   "anthony liu": ["Yes", "Yes", "Chilean Sea Bass"],
   "mahal miles": ["Yes", "Yes", "Chilean Sea Bass"],
-  "ye eun hong": ["Yes", "Yes", "10oz Filet Mignon"],
+  "ye eun hong": ["No", "No", "N/A"],
   "kenny ashley": ["Yes", "Yes", "Chilean Sea Bass"],
   "alyssa ashley": ["Yes", "Yes", "10oz Filet Mignon"],
   "eva mo": ["Yes", "Yes", "10oz Filet Mignon"],
@@ -42,7 +42,7 @@ export const rsvpData = {
   "chloe lee": ["Yes", "Yes", "Chilean Sea Bass"],
   "hank lee": ["Yes", "Yes", "10oz Filet Mignon"],
   "christine wu": ["Yes", "Yes", "Chilean Sea Bass"],
-  "michelle chang": ["Yes", "Yes", "10oz Filet Mignon"],
-  "ethan chang": ["Yes", "Yes", "Chilean Sea Bass"],
+  "michelle chang": ["No", "No", "N/A"],
+  "ethan chang": ["No", "No", "N/A"],
   "ej huang": ["Yes", "Yes", "10oz Filet Mignon"],
 };
