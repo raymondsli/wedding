@@ -19,7 +19,17 @@ function Details() {
   return (
     <div className={"details-container" + (isMobile ? " mobile" : "")}>
       <div className={"background-image" + (isMobile ? " mobile" : "")} />
-      <div></div>
+      <div
+        style={{
+          color: "darkblue",
+          fontFamily: "Charm",
+          marginBottom: "40px",
+          textAlign: "center",
+          fontSize: "50px",
+        }}
+      >
+        {language === "Chinese" ? "谢谢大家!" : "Thanks for coming, everyone!"}
+      </div>
       <div className="couple-image" />
       {isMobile ? (
         <h1 className="name-header mobile">
@@ -71,6 +81,7 @@ function Details() {
             digitBlockStyle={{
               backgroundColor: "rgb(13, 75, 133)",
             }}
+            hideOnComplete={false}
           />
         </div>
       )}
