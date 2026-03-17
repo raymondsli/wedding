@@ -1,7 +1,7 @@
 {
   "name": "wedding",
   "version": "0.1.0",
-  "homepage": "https://yinungandraymond.com",
+  "homepage": "https://raymondsli.github.io/wedding",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --cname yinungandraymond.com",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
