@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.dddfba0d.css",
-    "main.js": "/static/js/main.1d94a40b.js",
-    "static/media/cjk.ttf": "/static/media/cjk.f3117d64fd6953d0a254.ttf",
-    "static/media/GenSenRounded2TW-R.otf": "/static/media/GenSenRounded2TW-R.dfa30895dd6377df4cb9.otf",
-    "static/media/Yozai-Regular.ttf": "/static/media/Yozai-Regular.0a220af04a6d03856b4e.ttf",
-    "static/media/LXGWWenKaiTC-Regular.ttf": "/static/media/LXGWWenKaiTC-Regular.1238602b0cdcd33d81e4.ttf",
-    "static/media/ChenYuluoyan-2.0-Thin.ttf": "/static/media/ChenYuluoyan-2.0-Thin.4fbf96b1873bf6490e2f.ttf",
-    "static/media/couple-photo-3.png": "/static/media/couple-photo-3.2c9863d85386fb2d40d8.png",
-    "static/media/background-15.jpg": "/static/media/background-15.fa3b0093896d8e8f9347.jpg",
-    "static/media/Caveat.ttf": "/static/media/Caveat.31f0a02d84d42627c894.ttf",
-    "static/media/background-8.jpg": "/static/media/background-8.f874a55035501a843d89.jpg",
-    "static/media/dinner-menu-chinese.jpg": "/static/media/dinner-menu-chinese.45ce36b4fadd4ee6222b.jpg",
-    "static/media/PTSerif-Regular.ttf": "/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
-    "static/media/dinner-menu.jpg": "/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
-    "static/media/Charm-Regular.ttf": "/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
-    "static/media/AmsterdamOne.ttf": "/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
-    "index.html": "/index.html",
-    "main.dddfba0d.css.map": "/static/css/main.dddfba0d.css.map",
-    "main.1d94a40b.js.map": "/static/js/main.1d94a40b.js.map"
+    "main.css": "/wedding/static/css/main.553f40f9.css",
+    "main.js": "/wedding/static/js/main.1d94a40b.js",
+    "static/media/cjk.ttf": "/wedding/static/media/cjk.f3117d64fd6953d0a254.ttf",
+    "static/media/GenSenRounded2TW-R.otf": "/wedding/static/media/GenSenRounded2TW-R.dfa30895dd6377df4cb9.otf",
+    "static/media/Yozai-Regular.ttf": "/wedding/static/media/Yozai-Regular.0a220af04a6d03856b4e.ttf",
+    "static/media/LXGWWenKaiTC-Regular.ttf": "/wedding/static/media/LXGWWenKaiTC-Regular.1238602b0cdcd33d81e4.ttf",
+    "static/media/ChenYuluoyan-2.0-Thin.ttf": "/wedding/static/media/ChenYuluoyan-2.0-Thin.4fbf96b1873bf6490e2f.ttf",
+    "static/media/couple-photo-3.png": "/wedding/static/media/couple-photo-3.2c9863d85386fb2d40d8.png",
+    "static/media/background-15.jpg": "/wedding/static/media/background-15.fa3b0093896d8e8f9347.jpg",
+    "static/media/Caveat.ttf": "/wedding/static/media/Caveat.31f0a02d84d42627c894.ttf",
+    "static/media/background-8.jpg": "/wedding/static/media/background-8.f874a55035501a843d89.jpg",
+    "static/media/dinner-menu-chinese.jpg": "/wedding/static/media/dinner-menu-chinese.45ce36b4fadd4ee6222b.jpg",
+    "static/media/PTSerif-Regular.ttf": "/wedding/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
+    "static/media/dinner-menu.jpg": "/wedding/static/media/dinner-menu.d4f6adc91119a93ea01e.jpg",
+    "static/media/Charm-Regular.ttf": "/wedding/static/media/Charm-Regular.c76a059b4002b52f4682.ttf",
+    "static/media/AmsterdamOne.ttf": "/wedding/static/media/AmsterdamOne.8cac007d348adcf279c9.ttf",
+    "index.html": "/wedding/index.html",
+    "main.553f40f9.css.map": "/wedding/static/css/main.553f40f9.css.map",
+    "main.1d94a40b.js.map": "/wedding/static/js/main.1d94a40b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dddfba0d.css",
+    "static/css/main.553f40f9.css",
     "static/js/main.1d94a40b.js"
   ]
 }
